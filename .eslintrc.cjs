@@ -45,7 +45,7 @@ module.exports = {
       }
     ],
     "object-shorthand": "error",
-    "no-console": "warn",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": ["warn", {"extensions": [".tsx"]}],
@@ -53,13 +53,14 @@ module.exports = {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     'react-refresh/only-export-components': 'warn',
-    'max-len': ['warn', { 'code': 100 }],
+    'max-len': ['warn', { 'code': 100, 'comments': 200 }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'quotes': ["error", "double"],
-    "react/jsx-no-useless-fragment": "off"
+    "react/jsx-no-useless-fragment": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   },
 }
