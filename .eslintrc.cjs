@@ -59,7 +59,7 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-one-expression-per-line': 'off',
-    'quotes': ["error", "double"],
+    'quotes': ["error", "double", { "avoidEscape": true }],
     "react/jsx-no-useless-fragment": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   },
