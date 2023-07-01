@@ -6,7 +6,15 @@ import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
 
 const HeaderView = ({ title, subTitle }: HeaderProps): ReactElement => (
-  <Box width="100%" height="320px" bgcolor="primary.main" color="white" px={10} py={8}>
+  <Box
+    component="header"
+    width="100%"
+    height="320px"
+    bgcolor="primary.main"
+    color="white"
+    px={10}
+    py={8}
+  >
     <Box>
       <Typography variant="h2" textTransform="uppercase">
         {title}
