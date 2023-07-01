@@ -49,7 +49,7 @@ module.exports = {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": ["warn", {"extensions": [".tsx"]}],
-    "import/extensions": ["error", "ignorePackages", { ts: "off", tsx: "off" }],
+    "import/extensions": ["error", "ignorePackages", { ts: "never", tsx: "never", js: "never", jsx: "never" }],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     'react-refresh/only-export-components': 'warn',
@@ -61,6 +61,8 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'quotes': ["error", "double", { "avoidEscape": true }],
     "react/jsx-no-useless-fragment": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off"
   },
 }

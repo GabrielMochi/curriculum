@@ -1,8 +1,8 @@
 import "./fonts";
 
 import { createTheme } from "@mui/material";
-import palette from "./palette.ts";
-import components from "./components.ts";
+import palette from "./palette";
+import components from "./components";
 
 export default createTheme({
   palette,
