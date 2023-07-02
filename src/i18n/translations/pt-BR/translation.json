@@ -3,5 +3,20 @@
     "firstName": "Gabriel",
     "lastName": "Mochi",
     "role": "Senior Software Engineer"
+  },
+  "contact": {
+    "label": "Contact",
+    "location": {
+      "label": "Location",
+      "value": "🇨🇦 Montreal, QC, Canada"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "📞 +1 (437) 233-3740"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "contact@gabrielmochi.dev"
+    }
   }
 }

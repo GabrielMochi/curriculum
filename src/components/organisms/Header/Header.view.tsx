@@ -4,16 +4,15 @@ import type { HeaderProps } from "./index";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
+import globalCss from "../../../theme/globalCss";
 
 const HeaderView = ({ title, subTitle }: HeaderProps): ReactElement => (
   <Box
     component="header"
-    width="100%"
-    height="320px"
     bgcolor="primary.main"
     color="white"
-    px={10}
-    py={8}
+    px={globalCss.horizontalSpacing}
+    py={10}
   >
     <Box>
       <Typography variant="h2" textTransform="uppercase">
