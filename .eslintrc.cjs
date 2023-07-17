@@ -63,6 +63,7 @@ module.exports = {
     "react/jsx-no-useless-fragment": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "react/function-component-definition": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off"
   },
 }
