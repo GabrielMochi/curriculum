@@ -5,11 +5,11 @@ import linkedinLogoSvg from "../../assets/images/social/linkedin-logo.svg";
 import githubLogoSvg from "../../assets/images/social/github-logo.svg";
 import stackOverflowLogoSvg from "../../assets/images/social/stack-overflow-logo.svg";
 
-export type IndexControllerReturnType = {
+export type IndexControllerReturn = {
   defaultTemplateData: DefaultTemplateProps;
 };
 
-const useIndexController = (): IndexControllerReturnType => {
+const useIndexController = (): IndexControllerReturn => {
   const { t } = useTranslation();
 
   const defaultTemplateData: DefaultTemplateProps = {
