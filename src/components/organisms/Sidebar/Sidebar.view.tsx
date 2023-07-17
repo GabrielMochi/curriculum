@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import type { SidebarProps } from "./index";
 import type { SidebarControllerReturnType } from "./Sidebar.controller";
 import globalCss from "../../../theme/globalCss";
@@ -13,7 +13,7 @@ const SidebarView = ({
 }: SidebarProps & SidebarControllerReturnType): ReactElement => (
   <Stack
     component="aside"
-    spacing={2}
+    spacing={6}
     bgcolor="secondary.main"
     height="100%"
     px={globalCss.horizontalSpacing}
@@ -24,7 +24,7 @@ const SidebarView = ({
       <Typography variant="h5" textTransform="uppercase">
         {t("contact.label")}
       </Typography>
-      <Space height={theme.spacing(3)} />
+      <Space height={theme.spacing(2)} />
       <Stack spacing={2}>
         {contactRecords.map(({ label, value }) => (
           <Box key={label}>
@@ -37,9 +37,22 @@ const SidebarView = ({
       </Stack>
     </Box>
     {/* Social */}
-    <Box />
+    <Box>
+      <Typography variant="h5" textTransform="uppercase">
+        {t("social.label")}
+      </Typography>
+      <Space height={theme.spacing(2)} />
+      <Stack spacing={2}>
+        {socialRecords.map(({ label, url, logo }) => (
+          <Link key={url} href={url} display="inline-flex" alignItems="center">
+            <img src={logo} alt={label} width={20} height={20} />
+            <Typography ml={1}>{label}</Typography>
+          </Link>
+        ))}
+      </Stack>
+    </Box>
     {/* Academic Education */}
-    <Box />
+    {/* <Box /> */}
   </Stack>
 );
 
