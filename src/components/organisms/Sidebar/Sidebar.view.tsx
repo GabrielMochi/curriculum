@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import type { SidebarProps } from "./index";
-import type { SidebarControllerProps } from "./Sidebar.controller";
+import type { SidebarControllerReturnType } from "./Sidebar.controller";
 import globalCss from "../../../theme/globalCss";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
@@ -9,7 +9,8 @@ import theme from "../../../theme";
 const SidebarView = ({
   t,
   contactRecords,
-}: SidebarProps & SidebarControllerProps): ReactElement => (
+  socialRecords,
+}: SidebarProps & SidebarControllerReturnType): ReactElement => (
   <Stack
     component="aside"
     spacing={2}
