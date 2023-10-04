@@ -16,8 +16,8 @@ export type AcademicEducationProps = {
   courseTitle: string;
   institutionName: string;
   period: {
-    yearStart: number;
-    yearEnd?: number;
+    startYear: string;
+    endYear?: string;
   };
 };
 
