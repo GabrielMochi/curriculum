@@ -61,7 +61,46 @@ const useIndexController = (): IndexControllerReturn => {
           logo: stackOverflowLogoSvg,
         },
       ],
-      academicEducationRecords: [],
+      academicEducationRecords: [
+        {
+          courseTitle: t("academicEducation.fatec.courseTitle"),
+          institutionName: t("academicEducation.fatec.institutionName"),
+          period: {
+            startYear: t("academicEducation.fatec.period.startYear"),
+            endYear: t("academicEducation.fatec.period.endYear"),
+          },
+        },
+        {
+          courseTitle: t("academicEducation.ifsp.courseTitle"),
+          institutionName: t("academicEducation.ifsp.institutionName"),
+          period: {
+            startYear: t("academicEducation.ifsp.period.startYear"),
+            endYear: t("academicEducation.ifsp.period.endYear"),
+          },
+        },
+        {
+          courseTitle: t("academicEducation.prandiano.courseTitle"),
+          institutionName: t("academicEducation.prandiano.institutionName"),
+          period: {
+            startYear: t("academicEducation.prandiano.period.startYear"),
+          },
+        },
+        {
+          courseTitle: t("academicEducation.conquer.courseTitle"),
+          institutionName: t("academicEducation.conquer.institutionName"),
+          period: {
+            startYear: t("academicEducation.conquer.period.startYear"),
+          },
+        },
+        {
+          courseTitle: t("academicEducation.cellep.courseTitle"),
+          institutionName: t("academicEducation.cellep.institutionName"),
+          period: {
+            startYear: t("academicEducation.cellep.period.startYear"),
+            endYear: t("academicEducation.cellep.period.endYear"),
+          },
+        },
+      ],
     },
   };
 

@@ -9,6 +9,7 @@ const SidebarView = ({
   t,
   contactRecords,
   socialRecords,
+  academicEducationRecords,
 }: SidebarProps & SidebarControllerReturn): ReactElement => (
   <Stack
     component="aside"
@@ -24,7 +25,7 @@ const SidebarView = ({
           <Typography fontWeight="700" textTransform="uppercase">
             {label}
           </Typography>
-          <Typography>{value}</Typography>
+          <Typography fontWeight="300">{value}</Typography>
         </Box>
       ))}
     </SidebarRecords>
@@ -32,11 +33,27 @@ const SidebarView = ({
       {socialRecords.map(({ label, url, logo }) => (
         <Link key={url} href={url} display="inline-flex" alignItems="center">
           <img src={logo} alt={label} width={20} height={20} />
-          <Typography ml={1}>{label}</Typography>
+          <Typography ml={1} fontWeight="300">
+            {label}
+          </Typography>
         </Link>
       ))}
     </SidebarRecords>
-    <SidebarRecords title={t("academicEducation.label")} />
+    <SidebarRecords title={t("academicEducation.label")} spacing={4}>
+      {academicEducationRecords.map(({ courseTitle, institutionName, period }) => (
+        <Stack key={courseTitle} spacing={2}>
+          <Typography fontWeight="700" textTransform="uppercase">
+            {courseTitle}
+          </Typography>
+          <Typography fontWeight="300" textTransform="uppercase">
+            {institutionName}
+          </Typography>
+          <Typography fontWeight="300">{`${period.startYear}${
+            period.endYear ? ` - ${period.endYear}` : ""
+          }`}</Typography>
+        </Stack>
+      ))}
+    </SidebarRecords>
   </Stack>
 );
 
