@@ -30,5 +30,14 @@
     "stackOverflow": {
       "label": "Stack Overflow"
     }
+  },
+  "academicEducation": {
+    "label": "Academic Education",
+    "fatec": {
+      "course": "Analysis and systems development",
+      "institutionName": "Faculdade de Tecnologia de São Paulo (FATEC)",
+      "startYear": "2020",
+      "endYear": "2021 (não terminado)"
+    }
   }
 }

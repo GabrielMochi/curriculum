@@ -1,11 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import enUsTranslation from "./translations/en-US/translation.json";
 import ptBrTranslation from "./translations/pt-BR/translation.json";
 
 export const defaultNS = "translation";
 
 export const resources = {
+  "en-US": {
+    translation: enUsTranslation,
+  },
   "pt-BR": {
     translation: ptBrTranslation,
   },
@@ -17,7 +21,7 @@ i18n
   .init({
     defaultNS,
     resources,
-    fallbackLng: "pt-BR",
+    fallbackLng: "en-US",
     interpolation: {
       escapeValue: false, // react already safes from xss
     },

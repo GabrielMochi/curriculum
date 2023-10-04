@@ -1,0 +1,75 @@
+{
+  "intro": {
+    "firstName": "Gabriel",
+    "lastName": "Mochi",
+    "role": "Senior Software Engineer"
+  },
+  "contact": {
+    "label": "Contact",
+    "location": {
+      "label": "Location",
+      "value": "🇨🇦 Montreal, QC, Canada"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "📞 +1 (437) 233-3740"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "contact@gabrielmochi.dev"
+    }
+  },
+  "social": {
+    "label": "Social",
+    "linkedin": {
+      "label": "LinkedIn"
+    },
+    "github": {
+      "label": "Github"
+    },
+    "stackOverflow": {
+      "label": "Stack Overflow"
+    }
+  },
+  "academicEducation": {
+    "label": "Academic Education",
+    "fatec": {
+      "courseTitle": "Analysis and systems development",
+      "institutionName": "Faculdade de Tecnologia de São Paulo (FATEC)",
+      "period": {
+        "startYear": "2020",
+        "endYear": "2021 (unfinished)"
+      }
+    },
+    "ifsp": {
+      "courseTitle": "Computer technician",
+      "institutionName": "Instituto Federal de São Paulo (IFSP)",
+      "period": {
+        "startYear": "2016",
+        "endYear": "2019"
+      }
+    },
+    "prandiano": {
+      "courseTitle": "Applied mathematics",
+      "institutionName": "Prandiano - Museum of Mathematics",
+      "period": {
+        "startYear": "2016"
+      }
+    },
+    "conquer": {
+      "courseTitle": "Grow your business (Entrepreneurship)",
+      "institutionName": "Conquer School",
+      "period": {
+        "startYear": "2020"
+      }
+    },
+    "cellep": {
+      "courseTitle": "English classes (Pre-intermediate 1 – Advanced Plus)",
+      "institutionName": "CEL.LEP",
+      "period": {
+        "startYear": "2012",
+        "endYear": "2019"
+      }
+    }
+  }
+}
