@@ -3,13 +3,17 @@ import { Box, Stack, Typography } from "@mui/material";
 import type { SidebarRecordsProps } from "./index";
 import Space from "../../atoms/Space";
 
-const SidebarRecordsView = ({ title, children }: SidebarRecordsProps): ReactElement => (
+const SidebarRecordsView = ({
+  title,
+  children,
+  spacing = 2,
+}: SidebarRecordsProps): ReactElement => (
   <Box>
     <Typography variant="h5" textTransform="uppercase">
       {title}
     </Typography>
-    <Space height={2} />
-    <Stack spacing={2}>{children}</Stack>
+    <Space height={16} />
+    <Stack spacing={spacing}>{children}</Stack>
   </Box>
 );
 
