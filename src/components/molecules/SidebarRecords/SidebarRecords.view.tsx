@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import type { SidebarRecordsProps } from "./index";
+import type { SidebarRecordsProps } from "./interface";
 import Space from "../../atoms/Space";
 
 const SidebarRecordsView = ({
