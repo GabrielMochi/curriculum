@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import type { SpaceProps } from "./interface";
+import type { SpaceProps } from "./Space.interface";
 import SpaceView from "./Space.view";
 import BuildComponent from "../../../utils/BuildComponent";
 

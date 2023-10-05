@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import type { HeaderProps } from "./interface";
+import type { HeaderProps } from "./Header.interface";
 import HeaderView from "./Header.view";
 import BuildComponent from "../../../utils/BuildComponent";
 
