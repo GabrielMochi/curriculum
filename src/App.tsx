@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import Index from "./pages/Index";
+import IndexPage from "./pages/IndexPage";
 
-const App = (): ReactElement => <Index />;
+const App = (): ReactElement => <IndexPage />;
 
 export default App;

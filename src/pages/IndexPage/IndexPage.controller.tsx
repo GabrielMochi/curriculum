@@ -1,18 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { Box, Link } from "@mui/material";
-import type { DefaultTemplateProps } from "../../components/templates/DefaultTemplate";
 import linkedinLogoSvg from "../../assets/images/social/linkedin-logo.svg";
 import githubLogoSvg from "../../assets/images/social/github-logo.svg";
 import stackOverflowLogoSvg from "../../assets/images/social/stack-overflow-logo.svg";
+import type { IndexControllerReturn } from "./IndexPage.interface";
 
-export type IndexControllerReturn = {
-  defaultTemplateData: DefaultTemplateProps;
-};
-
-const useIndexController = (): IndexControllerReturn => {
+const useIndexPageController = (): IndexControllerReturn => {
   const { t } = useTranslation();
 
-  const defaultTemplateData: DefaultTemplateProps = {
+  const defaultTemplateData: IndexControllerReturn["defaultTemplateData"] = {
     header: {
       title: (
         <>
@@ -107,4 +103,4 @@ const useIndexController = (): IndexControllerReturn => {
   return { defaultTemplateData };
 };
 
-export default useIndexController;
+export default useIndexPageController;
