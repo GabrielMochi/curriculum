@@ -1,9 +1,5 @@
-import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
-
-export type SidebarControllerReturn = {
-  t: TFunction;
-};
+import type { SidebarControllerReturn } from "./Sidebar.interface";
 
 const useSidebarController = (): SidebarControllerReturn => {
   const { t } = useTranslation();

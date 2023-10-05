@@ -1,7 +1,6 @@
 import type { ReactElement } from "react";
 import { Box, Link, Stack, Typography } from "@mui/material";
-import type { SidebarProps } from "./index";
-import type { SidebarControllerReturn } from "./Sidebar.controller";
+import type { SidebarProps, SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarRecords from "../../molecules/SidebarRecords";
 
