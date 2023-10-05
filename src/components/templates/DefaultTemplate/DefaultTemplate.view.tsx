@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import type { DefaultTemplateProps } from "./index";
+import type { DefaultTemplateProps } from "./DefaultTemplate.interface";
 import Header from "../../organisms/Header";
 import Sidebar from "../../organisms/Sidebar";
 
