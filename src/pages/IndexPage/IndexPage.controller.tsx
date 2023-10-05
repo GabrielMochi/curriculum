@@ -8,6 +8,8 @@ import type { IndexControllerReturn } from "./IndexPage.interface";
 const useIndexPageController = (): IndexControllerReturn => {
   const { t } = useTranslation();
 
+  // TODO: split the properties values below into multiple files and then bundle then (?)
+
   const defaultTemplateData: IndexControllerReturn["defaultTemplateData"] = {
     header: {
       title: (
