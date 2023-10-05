@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { Box, Typography } from "@mui/material";
-import type { HeaderProps } from "./index";
+import type { HeaderProps } from "./interface";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
