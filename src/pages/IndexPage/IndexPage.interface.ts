@@ -1,8 +1,5 @@
-import type { ComponentProps } from "react";
-import type DefaultTemplate from "../../components/templates/DefaultTemplate";
-
-type DefaultTemplateProps = ComponentProps<typeof DefaultTemplate>;
+import type { TFunction } from "i18next";
 
 export type IndexControllerReturn = {
-  defaultTemplateData: DefaultTemplateProps;
+  t: TFunction;
 };
