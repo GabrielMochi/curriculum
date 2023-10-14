@@ -1,5 +1,12 @@
-import type { TFunction } from "i18next";
+import type { ComponentProps } from "react";
+import type Header from "../../components/organisms/Header";
+import type Sidebar from "../../components/organisms/Sidebar";
+
+export type IndexPageContent = {
+  header: ComponentProps<typeof Header>;
+  sidebar: ComponentProps<typeof Sidebar>;
+};
 
 export type IndexControllerReturn = {
-  t: TFunction;
+  content: IndexPageContent;
 };
