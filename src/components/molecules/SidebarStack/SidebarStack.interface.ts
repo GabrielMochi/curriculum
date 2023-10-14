@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from "react";
 import type { ResponsiveStyleValue } from "@mui/system";
 
-export type SidebarRecordsProps = PropsWithChildren<{
+export type SidebarStackProps = PropsWithChildren<{
   title: string;
   spacing?: ResponsiveStyleValue<string | number>;
 }>;
