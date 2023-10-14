@@ -1,8 +1,9 @@
 import type { ReactElement } from "react";
-import { Box, Link, Stack, Typography } from "@mui/material";
+import { Link, Stack, Typography } from "@mui/material";
 import type { SidebarProps, SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarStack from "../../molecules/SidebarStack";
+import Contact from "../../molecules/Contact";
 
 const SidebarView = ({
   t,
@@ -20,12 +21,7 @@ const SidebarView = ({
   >
     <SidebarStack title={t("contact.label")}>
       {contactRecords.map(({ label, value }) => (
-        <Box key={label}>
-          <Typography fontWeight="700" textTransform="uppercase">
-            {label}
-          </Typography>
-          <Typography fontWeight="300">{value}</Typography>
-        </Box>
+        <Contact key={label} label={label} value={value} />
       ))}
     </SidebarStack>
     <SidebarStack title={t("social.label")}>

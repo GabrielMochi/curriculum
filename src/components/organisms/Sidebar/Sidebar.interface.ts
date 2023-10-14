@@ -1,8 +1,10 @@
 import type { TFunction } from "i18next";
-import type { AcademicEducationProps, ContactProps, SocialProps } from "../../../types";
+import { ComponentProps } from "react";
+import type { AcademicEducationProps, SocialProps } from "../../../types";
+import Contact from "../../molecules/Contact";
 
 export type SidebarProps = {
-  contactRecords: ContactProps[];
+  contactRecords: ComponentProps<typeof Contact>[];
   socialRecords: SocialProps[];
   academicEducationRecords: AcademicEducationProps[];
 };
