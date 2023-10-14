@@ -1,9 +1,10 @@
 import type { ReactElement } from "react";
-import { Link, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import type { SidebarProps, SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarStack from "../../molecules/SidebarStack";
 import Contact from "../../molecules/Contact";
+import Social from "../../molecules/Social";
 
 const SidebarView = ({
   t,
@@ -26,12 +27,7 @@ const SidebarView = ({
     </SidebarStack>
     <SidebarStack title={t("social.label")}>
       {socialRecords.map(({ label, url, logo }) => (
-        <Link key={url} href={url} display="inline-flex" alignItems="center">
-          <img src={logo} alt={label} width={20} height={20} />
-          <Typography ml={1} fontWeight="300">
-            {label}
-          </Typography>
-        </Link>
+        <Social key={url} label={label} url={url} logo={logo} />
       ))}
     </SidebarStack>
     <SidebarStack title={t("academicEducation.label")} spacing={4}>
