@@ -1,7 +1,7 @@
 import type { TFunction } from "i18next";
 import { ComponentProps } from "react";
 import type { AcademicEducationProps, SocialProps } from "../../../types";
-import Contact from "../../molecules/Contact";
+import type Contact from "../../molecules/Contact";
 
 export type SidebarProps = {
   contactRecords: ComponentProps<typeof Contact>[];
