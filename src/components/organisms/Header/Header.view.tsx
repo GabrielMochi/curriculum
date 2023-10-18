@@ -1,12 +1,12 @@
 import type { ReactElement } from "react";
 import { Box, Typography } from "@mui/material";
-import type { HeaderProps } from "./Header.interface";
+import type { HeaderControllerReturn } from "./Header.interface";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
 import globalCss from "../../../theme/globalCss";
 
-const HeaderView = ({ title, subTitle }: HeaderProps): ReactElement => (
+const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
   <Box
     component="header"
     bgcolor="primary.main"
@@ -16,11 +16,16 @@ const HeaderView = ({ title, subTitle }: HeaderProps): ReactElement => (
   >
     <Box>
       <Typography variant="h2" textTransform="uppercase">
-        {title}
+        <Box component="span" fontWeight="700">
+          {t("intro.firstName")}
+        </Box>{" "}
+        <Box component="span" fontWeight="300">
+          {t("intro.lastName")}
+        </Box>
       </Typography>
       <Space height={theme.spacing(2)} />
       <Typography variant="h5" textTransform="uppercase">
-        {subTitle}
+        {t("intro.role")}
       </Typography>
     </Box>
     <Space height={theme.spacing(4)} />

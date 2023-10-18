@@ -1,6 +1,5 @@
-import type { ReactNode } from "react";
+import type { TFunction } from "i18next";
 
-export type HeaderProps = {
-  title: ReactNode;
-  subTitle: string;
+export type HeaderControllerReturn = {
+  t: TFunction;
 };

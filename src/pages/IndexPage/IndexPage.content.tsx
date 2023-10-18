@@ -1,5 +1,5 @@
 import type { TFunction } from "i18next";
-import { Box, Link } from "@mui/material";
+import { Link } from "@mui/material";
 import type { IndexPageContent } from "./IndexPage.interface";
 import linkedinLogoSvg from "../../assets/images/social/linkedin-logo.svg";
 import githubLogoSvg from "../../assets/images/social/github-logo.svg";
@@ -10,18 +10,6 @@ type IndexPageContentProps = {
 };
 
 const useIndexPageContent = ({ t }: IndexPageContentProps): IndexPageContent => {
-  const header: IndexPageContent["header"] = {
-    title: (
-      <>
-        <Box component="span" fontWeight="700">
-          {t("intro.firstName")}
-        </Box>{" "}
-        {t("intro.lastName")}
-      </>
-    ),
-    subTitle: t("intro.role"),
-  };
-
   const sidebar: IndexPageContent["sidebar"] = {
     contactRecords: [
       {
@@ -96,7 +84,7 @@ const useIndexPageContent = ({ t }: IndexPageContentProps): IndexPageContent => 
     ],
   };
 
-  return { header, sidebar };
+  return { sidebar };
 };
 
 export default useIndexPageContent;

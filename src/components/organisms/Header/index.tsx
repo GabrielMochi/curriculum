@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
-import type { HeaderProps } from "./Header.interface";
 import HeaderView from "./Header.view";
 import BuildComponent from "../../../utils/BuildComponent";
+import useHeaderController from "./Header.controller";
 
-const Header = (props: HeaderProps): ReactElement => (
-  <BuildComponent props={props} view={HeaderView} />
+const Header = (): ReactElement => (
+  <BuildComponent controller={useHeaderController} view={HeaderView} />
 );
 
 export default Header;
