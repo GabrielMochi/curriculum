@@ -34,12 +34,7 @@ const useIndexPageContent = ({ t }: IndexPageContentProps): IndexPageContent => 
       },
       {
         label: t("contact.email.label"),
-        value: (
-          <>
-            <span>📧</span>{" "}
-            <Link href={`mailto:${t("contact.email.value")}`}>{t("contact.email.value")}</Link>
-          </>
-        ),
+        value: <Link href={`mailto:${t("contact.email.value")}`}>{t("contact.email.value")}</Link>,
       },
     ],
     socialRecords: [

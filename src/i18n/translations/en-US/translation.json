@@ -8,11 +8,11 @@
     "label": "Contact",
     "location": {
       "label": "Location",
-      "value": "🇨🇦 Montreal, QC, Canada"
+      "value": "Montreal, QC, Canada"
     },
     "phone": {
       "label": "Phone",
-      "value": "📞 +1 (437) 233-3740"
+      "value": "+1 (437) 233-3740"
     },
     "email": {
       "label": "E-mail",
