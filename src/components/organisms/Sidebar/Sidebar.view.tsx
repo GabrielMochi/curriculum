@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { Stack } from "@mui/material";
-import type { SidebarProps, SidebarControllerReturn } from "./Sidebar.interface";
+import type { SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarStack from "../../molecules/SidebarStack";
 import Contact from "../../molecules/Contact";
@@ -12,7 +12,7 @@ const SidebarView = ({
   contactRecords,
   socialRecords,
   academicEducationRecords,
-}: SidebarProps & SidebarControllerReturn): ReactElement => (
+}: SidebarControllerReturn): ReactElement => (
   <Stack
     component="aside"
     spacing={6}

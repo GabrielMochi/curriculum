@@ -1,16 +1,15 @@
 import type { ReactElement } from "react";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import type { IndexControllerReturn } from "./IndexPage.interface";
 import Header from "../../components/organisms/Header";
 import Sidebar from "../../components/organisms/Sidebar";
 
-const IndexPageView = ({ content: { header, sidebar } }: IndexControllerReturn): ReactElement => (
+const IndexPageView = (): ReactElement => (
   <Box display="flex" flexDirection="column" flex="1">
-    <Header {...header} />
+    <Header />
     <Grid container flex="1">
       <Grid xs={3}>
-        <Sidebar {...sidebar} />
+        <Sidebar />
       </Grid>
       <Grid xs />
     </Grid>
