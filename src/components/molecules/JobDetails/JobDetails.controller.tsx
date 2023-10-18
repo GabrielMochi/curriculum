@@ -3,7 +3,7 @@ import type { JobDetailsControllerReturn } from "./JobDetails.interface";
 
 const useJobDetailsController = (): JobDetailsControllerReturn => {
   const { t } = useTranslation();
-  return { t, periodDateFormat: t("professionalHistory.periodDateFormat") };
+  return { t };
 };
 
 export default useJobDetailsController;

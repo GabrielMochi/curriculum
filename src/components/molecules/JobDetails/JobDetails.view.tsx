@@ -10,7 +10,6 @@ const JobDetailsView = ({
   company,
   jobTitle,
   period,
-  periodDateFormat,
   location,
   description,
   skills,
@@ -24,9 +23,9 @@ const JobDetailsView = ({
         {subslate(
           "{{startDate}} – {{endDate}} | {{city}}, {{state}}, {{country}}",
           {
-            startDate: dayjs(period.startDate).format(periodDateFormat),
+            startDate: dayjs(period.startDate).format(t("professionalHistory.periodDateFormat")),
             endDate: period.endDate
-              ? dayjs(period.startDate).format(periodDateFormat)
+              ? dayjs(period.startDate).format(t("professionalHistory.periodDateFormat"))
               : t("professionalHistory.present"),
             city: location.city,
             state: location.state,

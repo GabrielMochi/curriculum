@@ -19,5 +19,4 @@ export type JobDetailsProps = {
 
 export type JobDetailsControllerReturn = {
   t: TFunction;
-  periodDateFormat: string;
 };
