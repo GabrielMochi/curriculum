@@ -71,5 +71,9 @@
         "endYear": "2019"
       }
     }
+  },
+  "professionalHistory": {
+    "periodDateFormat": "MMM YYYY",
+    "present": "Present"
   }
 }
