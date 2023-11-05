@@ -1,13 +1,14 @@
 import type { ReactElement } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import type { ContactProps } from "./Contact.interface";
+import Text from "../../atoms/Text";
 
 const ContactView = ({ label, value }: ContactProps): ReactElement => (
   <Box>
-    <Typography fontWeight="700" textTransform="uppercase">
+    <Text fontWeight="700" textTransform="uppercase">
       {label}
-    </Typography>
-    <Typography fontWeight="300">{value}</Typography>
+    </Text>
+    <Text fontWeight="300">{value}</Text>
   </Box>
 );
 

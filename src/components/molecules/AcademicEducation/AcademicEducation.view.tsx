@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import type { AcademicEducationProps } from "./AcademicEducation.interface";
+import Text from "../../atoms/Text";
 
 const AcademicEducationView = ({
   courseTitle,
@@ -8,15 +9,15 @@ const AcademicEducationView = ({
   period,
 }: AcademicEducationProps): ReactElement => (
   <Stack spacing={2}>
-    <Typography fontWeight="700" textTransform="uppercase">
+    <Text fontWeight="700" textTransform="uppercase">
       {courseTitle}
-    </Typography>
-    <Typography fontWeight="300" textTransform="uppercase">
+    </Text>
+    <Text fontWeight="300" textTransform="uppercase">
       {institutionName}
-    </Typography>
-    <Typography fontWeight="300">{`${period.startYear}${
+    </Text>
+    <Text fontWeight="300">{`${period.startYear}${
       period.endYear ? ` - ${period.endYear}` : ""
-    }`}</Typography>
+    }`}</Text>
   </Stack>
 );
 

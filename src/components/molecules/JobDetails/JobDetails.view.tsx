@@ -1,9 +1,10 @@
 import type { ReactElement } from "react";
-import { Box, Chip, Typography } from "@mui/material";
+import { Box, Chip } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
 import type { JobDetailsControllerReturn, JobDetailsProps } from "./JobDetails.interface";
 import Space from "../../atoms/Space";
+import Text from "../../atoms/Text";
 
 const JobDetailsView = ({
   t,
@@ -16,10 +17,10 @@ const JobDetailsView = ({
 }: JobDetailsProps & JobDetailsControllerReturn): ReactElement => (
   <Box component="section">
     <Box display="flex" justifyContent="space-between" alignItems="center">
-      <Typography fontWeight="700">
+      <Text fontWeight="700">
         {company} | {jobTitle}
-      </Typography>
-      <Typography fontWeight="300" fontStyle="italic">
+      </Text>
+      <Text fontWeight="300" fontStyle="italic">
         {subslate(
           "{{startDate}} – {{endDate}} | {{city}}, {{state}}, {{country}}",
           {
@@ -33,11 +34,11 @@ const JobDetailsView = ({
           },
           { startStopPairs: ["{{", "}}"] },
         )}
-      </Typography>
+      </Text>
     </Box>
     <Space height={8} />
     <Box>
-      <Typography>{description}</Typography>
+      <Text>{description}</Text>
     </Box>
     <Space height={8} />
     <Box
