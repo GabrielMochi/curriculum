@@ -33,14 +33,6 @@
   },
   "academicEducation": {
     "label": "Academic Education",
-    "fatec": {
-      "courseTitle": "Analysis and systems development",
-      "institutionName": "Faculdade de Tecnologia de São Paulo (FATEC)",
-      "period": {
-        "startYear": "2020",
-        "endYear": "2021 (unfinished)"
-      }
-    },
     "ifsp": {
       "courseTitle": "Computer technician",
       "institutionName": "Instituto Federal de São Paulo (IFSP)",

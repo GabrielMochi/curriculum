@@ -43,14 +43,6 @@ const useSidebarController = (): SidebarControllerReturn => {
 
   const academicEducationRecords: SidebarControllerReturn["academicEducationRecords"] = [
     {
-      courseTitle: t("academicEducation.fatec.courseTitle"),
-      institutionName: t("academicEducation.fatec.institutionName"),
-      period: {
-        startYear: t("academicEducation.fatec.period.startYear"),
-        endYear: t("academicEducation.fatec.period.endYear"),
-      },
-    },
-    {
       courseTitle: t("academicEducation.ifsp.courseTitle"),
       institutionName: t("academicEducation.ifsp.institutionName"),
       period: {
