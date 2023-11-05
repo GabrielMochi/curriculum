@@ -19,7 +19,7 @@ const SidebarView = ({
     bgcolor="secondary.main"
     height="100%"
     px={globalCss.horizontalSpacing}
-    py={6}
+    py={globalCss.verticalSpacing}
   >
     <SidebarStack title={t("contact.label")}>
       {contactRecords.map(({ label, value }) => (
