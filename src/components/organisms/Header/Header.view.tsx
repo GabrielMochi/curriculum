@@ -1,11 +1,12 @@
 import type { ReactElement } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import type { HeaderControllerReturn } from "./Header.interface";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
 import globalCss from "../../../theme/globalCss";
 import Title from "../../atoms/Title";
+import Callout from "../../atoms/Callout";
 
 const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
   <Box
@@ -16,14 +17,14 @@ const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
     py={10}
   >
     <Box>
-      <Typography variant="h2" textTransform="uppercase">
+      <Callout textTransform="uppercase">
         <Box component="span" fontWeight="700">
           {t("intro.firstName")}
         </Box>{" "}
         <Box component="span" fontWeight="300">
           {t("intro.lastName")}
         </Box>
-      </Typography>
+      </Callout>
       <Space height={theme.spacing(2)} />
       <Title textTransform="uppercase">{t("intro.role")}</Title>
     </Box>
