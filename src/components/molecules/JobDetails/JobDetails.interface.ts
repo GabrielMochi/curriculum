@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { TFunction } from "i18next";
 
 export type JobDetailsProps = {
@@ -13,7 +12,7 @@ export type JobDetailsProps = {
     state: string;
     country: string;
   };
-  description: ReactNode;
+  description: string;
   skills: string[];
 };
 
