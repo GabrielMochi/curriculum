@@ -26,7 +26,7 @@ const JobDetailsView = ({
           {
             startDate: dayjs(period.startDate).format(t("professionalHistory.periodDateFormat")),
             endDate: period.endDate
-              ? dayjs(period.startDate).format(t("professionalHistory.periodDateFormat"))
+              ? dayjs(period.endDate).format(t("professionalHistory.periodDateFormat"))
               : t("professionalHistory.present"),
             city: location.city,
             state: location.state,
