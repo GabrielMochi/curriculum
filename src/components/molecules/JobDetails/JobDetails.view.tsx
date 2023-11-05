@@ -51,7 +51,7 @@ const JobDetailsView = ({
           key={skill}
           label={<Typography variant="body2">{skill}</Typography>}
           variant="outlined"
-          color="primary"
+          color="default"
         />
       ))}
     </Box>
