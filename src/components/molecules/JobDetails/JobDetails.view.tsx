@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Box, Chip } from "@mui/material";
+import { Box, Chip, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
 import type { JobDetailsControllerReturn, JobDetailsProps } from "./JobDetails.interface";
@@ -36,21 +36,23 @@ const JobDetailsView = ({
         )}
       </Text>
     </Box>
-    <Space height={8} />
+    <Space height={12} />
     <Box>
-      <Text>{description}</Text>
+      {description.split("\n").map((text) => (
+        <Text textAlign="justify" minHeight={16}>
+          {text}
+        </Text>
+      ))}
     </Box>
-    <Space height={8} />
-    <Box
-      display="flex"
-      justifyContent="space-between"
-      alignItems="center"
-      flexWrap="wrap"
-      gap={4}
-      sx={{ "::after": { content: "", flex: "auto" } }}
-    >
+    <Space height={12} />
+    <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={2}>
       {skills.map((skill) => (
-        <Chip key={skill} label={skill} variant="outlined" color="primary" />
+        <Chip
+          key={skill}
+          label={<Typography variant="body2">{skill}</Typography>}
+          variant="outlined"
+          color="primary"
+        />
       ))}
     </Box>
   </Box>
