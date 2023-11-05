@@ -5,6 +5,7 @@ import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
 import globalCss from "../../../theme/globalCss";
+import Title from "../../atoms/Title";
 
 const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
   <Box
@@ -24,9 +25,7 @@ const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
         </Box>
       </Typography>
       <Space height={theme.spacing(2)} />
-      <Typography variant="h5" textTransform="uppercase">
-        {t("intro.role")}
-      </Typography>
+      <Title textTransform="uppercase">{t("intro.role")}</Title>
     </Box>
     <Space height={theme.spacing(4)} />
     <Box height="28.5px" width="304px">

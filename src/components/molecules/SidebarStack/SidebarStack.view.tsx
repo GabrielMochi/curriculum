@@ -1,13 +1,13 @@
 import type { ReactElement } from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import type { SidebarStackProps } from "./SidebarStack.interface";
 import Space from "../../atoms/Space";
+import Title from "../../atoms/Title";
 
 const SidebarStackView = ({ title, children, spacing = 2 }: SidebarStackProps): ReactElement => (
   <Box>
-    <Typography variant="h5" textTransform="uppercase">
+    <Title textTransform="uppercase">{title}</Title>
       {title}
-    </Typography>
     <Space height={16} />
     <Stack spacing={spacing}>{children}</Stack>
   </Box>
