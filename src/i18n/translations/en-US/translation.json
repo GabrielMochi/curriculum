@@ -34,7 +34,7 @@
   "academicEducation": {
     "label": "Academic Education",
     "ifsp": {
-      "courseTitle": "Computer technician",
+      "courseTitle": "Professional Degree in Information Systems",
       "institutionName": "Instituto Federal de São Paulo (IFSP)",
       "period": {
         "startYear": "2016",
@@ -66,6 +66,29 @@
   },
   "professionalHistory": {
     "periodDateFormat": "MMM YYYY",
-    "present": "Present"
+    "present": "Present",
+    "title": "Professional History",
+    "records": {
+      "estateably": {
+        "company": "Estateably",
+        "jobTitle": "Senior Software Engineer",
+        "location": {
+          "city": "Montreal",
+          "state": "QC",
+          "country": "Canada"
+        },
+        "description": "In his role as a Senior Software Engineer at Estateably, he plays a significant part in the company's expansion efforts within the legal and banking sectors. He actively contributes to the development of both backend and frontend components, consistently adhering to industry-leading standards in code quality, system architecture, and security. His unwavering commitment to these best practices was instrumental in maintaining the scalability and responsiveness of Estateably's systems, enabling the company to meet the ever-changing demands of its clients and stay competitive in the industry."
+      },
+      "monis": {
+        "company": "Monis",
+        "jobTitle": "Software Engineer & Founding Partner",
+        "location": {
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brazil"
+        },
+        "description": "As a founding member of Monis, he served as one of the first software engineers on the team, tasked with the ambitious mission of building the entire system from scratch. In this capacity:\n\n- Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the Typeorm library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.\n\n- Web Platform Development with Next.js: He led the way in spearheading the development of the web platform using Next.js, marking a significant milestone as it became the first platform for users to interact with the Monis system.\n\n- Design and Construction of Intuitive Admin Portal: He designed and built an intuitive admin portal that empowered employees to manage users efficiently. This portal was developed using Flutter for the web, setting the stage for future cross-platform development of the Monis app for iOS and Android.\n\n- Active Contribution to CI/CD Implementation and Automated Testing: He played an active role in contributing to the implementation of the initial Continuous Integration/Continuous Deployment (CI/CD) processes and automated testing, ensuring the unwavering reliability and stability of Monis' applications.\n\n- Leveraging Docker for Containerized Deployments: He harnessed Docker to create robust container structures for deploying applications within the GCP-architected infrastructure. Initially, VM instances served as the hosting environment for these applications. However, as the demand for scalability and operational efficiency continued to rise, the team oversaw the gradual migration of these monolithic applications to Cloud Run, a more flexible and scalable container deployment service.\n\nHis contributions at Monis underscore his technical expertise and commitment to pioneering innovative solutions in the fintech sector."
+      }
+    }
   }
 }
