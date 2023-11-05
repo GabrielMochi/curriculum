@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import { Box, Chip, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
+import md5 from "md5";
 import type { JobDetailsControllerReturn, JobDetailsProps } from "./JobDetails.interface";
 import Space from "../../atoms/Space";
 import Text from "../../atoms/Text";
@@ -38,8 +39,8 @@ const JobDetailsView = ({
     </Box>
     <Space height={12} />
     <Box>
-      {description.split("\n").map((text) => (
-        <Text textAlign="justify" minHeight={16}>
+      {description.split("\n").map((text, i) => (
+        <Text key={md5(text).concat(i.toString())} textAlign="justify" minHeight={16}>
           {text}
         </Text>
       ))}
