@@ -1,12 +1,12 @@
-import { useTranslation } from "react-i18next";
 import { Link } from "@mui/material";
 import type { SidebarControllerReturn } from "./Sidebar.interface";
 import linkedinLogoSvg from "../../../assets/images/social/linkedin-logo.svg";
 import githubLogoSvg from "../../../assets/images/social/github-logo.svg";
 import stackOverflowLogoSvg from "../../../assets/images/social/stack-overflow-logo.svg";
+import useTranslationController from "../../../common/controllers/Translation.controller";
 
 const useSidebarController = (): SidebarControllerReturn => {
-  const { t } = useTranslation();
+  const { t } = useTranslationController();
 
   const contactRecords: SidebarControllerReturn["contactRecords"] = [
     {

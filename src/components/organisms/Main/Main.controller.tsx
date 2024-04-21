@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
 import type { MainControllerReturn } from "./Main.interface";
 import type { JobDetailsProps } from "../../molecules/JobDetails/JobDetails.interface";
+import useTranslationController from "../../../common/controllers/Translation.controller";
 
 const useMainController = (): MainControllerReturn => {
-  const { t } = useTranslation();
+  const { t } = useTranslationController();
 
   const estateablyJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.estateably.company"),
