@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
 import type { MainControllerReturn } from "./Main.interface";
-
-type JobDetails = MainControllerReturn["jobDetailsRecords"][number];
+import type { JobDetailsProps } from "../../molecules/JobDetails/JobDetails.interface";
 
 const useMainController = (): MainControllerReturn => {
   const { t } = useTranslation();
 
-  const estateablyJobDetails: JobDetails = {
+  const estateablyJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.estateably.company"),
     jobTitle: t("professionalHistory.records.estateably.jobTitle"),
     period: {
@@ -32,7 +31,7 @@ const useMainController = (): MainControllerReturn => {
     ],
   };
 
-  const monisJobDetails: JobDetails = {
+  const monisJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.monis.company"),
     jobTitle: t("professionalHistory.records.monis.jobTitle"),
     period: {
@@ -62,7 +61,7 @@ const useMainController = (): MainControllerReturn => {
     ],
   };
 
-  const mutantJobDetails: JobDetails = {
+  const mutantJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.mutant.company"),
     jobTitle: t("professionalHistory.records.mutant.jobTitle"),
     period: {
@@ -90,7 +89,7 @@ const useMainController = (): MainControllerReturn => {
     ],
   };
 
-  const kpmgJobDetails: JobDetails = {
+  const kpmgJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.kpmg.company"),
     jobTitle: t("professionalHistory.records.kpmg.jobTitle"),
     period: {
@@ -121,7 +120,7 @@ const useMainController = (): MainControllerReturn => {
     ],
   };
 
-  const britechJobDetails: JobDetails = {
+  const britechJobDetails: JobDetailsProps = {
     company: t("professionalHistory.records.britech.company"),
     jobTitle: t("professionalHistory.records.britech.jobTitle"),
     period: {

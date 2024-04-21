@@ -3,9 +3,10 @@ import { Box, Chip, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
 import md5 from "md5";
-import type { JobDetailsControllerReturn, JobDetailsProps } from "./JobDetails.interface";
+import type { JobDetailsProps } from "./JobDetails.interface";
 import Space from "../../atoms/Space";
 import Text from "../../atoms/Text";
+import type { ControllerWithTranslation } from "../../../types";
 
 const JobDetailsView = ({
   t,
@@ -15,7 +16,7 @@ const JobDetailsView = ({
   location,
   description,
   skills,
-}: JobDetailsProps & JobDetailsControllerReturn): ReactElement => (
+}: JobDetailsProps & ControllerWithTranslation): ReactElement => (
   <Box component="section">
     <Box display="flex" justifyContent="space-between" alignItems="center">
       <Text fontWeight="700">

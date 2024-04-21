@@ -1,14 +1,14 @@
 import type { ReactElement } from "react";
 import { Box } from "@mui/material";
-import type { HeaderControllerReturn } from "./Header.interface";
 import Space from "../../atoms/Space";
 import theme from "../../../theme";
 import zigzag from "../../../assets/images/zigzag.svg";
 import globalCss from "../../../theme/globalCss";
 import Title from "../../atoms/Title";
 import Callout from "../../atoms/Callout";
+import type { ControllerWithTranslation } from "../../../types";
 
-const HeaderView = ({ t }: HeaderControllerReturn): ReactElement => (
+const HeaderView = ({ t }: ControllerWithTranslation): ReactElement => (
   <Box
     component="header"
     bgcolor="primary.main"

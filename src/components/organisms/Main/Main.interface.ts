@@ -1,8 +1,6 @@
-import type { TFunction } from "i18next";
-import type { ComponentProps } from "react";
-import type JobDetails from "../../molecules/JobDetails";
+import type { ControllerWithTranslation } from "../../../types";
+import type { JobDetailsProps } from "../../molecules/JobDetails/JobDetails.interface";
 
-export type MainControllerReturn = {
-  t: TFunction;
-  jobDetailsRecords: ComponentProps<typeof JobDetails>[];
-};
+export type MainControllerReturn = ControllerWithTranslation<{
+  jobDetailsRecords: JobDetailsProps[];
+}>;
