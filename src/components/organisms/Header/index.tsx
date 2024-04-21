@@ -1,13 +1,13 @@
 import type { ReactElement } from "react";
 import HeaderView from "./Header.view";
-import BuildComponent from "../../../utils/BuildComponent";
+import ComponentBuilder from "../../../common/builders/ComponentBuilder";
 import type { EmptyProps } from "../../../types";
 import useTranslationController, {
   TranslationControllerReturn,
 } from "../../../common/controllers/Translation.controller";
 
 const Header = (): ReactElement => (
-  <BuildComponent<EmptyProps, TranslationControllerReturn>
+  <ComponentBuilder<EmptyProps, TranslationControllerReturn>
     controller={useTranslationController}
     view={HeaderView}
   />

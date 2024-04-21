@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import IndexPageView from "./IndexPage.view";
-import BuildComponent from "../../utils/BuildComponent";
+import ComponentBuilder from "../../common/builders/ComponentBuilder";
 
-const IndexPage = (): ReactElement => <BuildComponent view={IndexPageView} />;
+const IndexPage = (): ReactElement => <ComponentBuilder view={IndexPageView} />;
 
 export default IndexPage;

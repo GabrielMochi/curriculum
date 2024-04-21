@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
-import BuildComponent from "../../../utils/BuildComponent";
+import ComponentBuilder from "../../../common/builders/ComponentBuilder";
 import type { SocialProps } from "./Social.interface";
 import SocialView from "./Social.view";
 
 const Social = (props: SocialProps): ReactElement => (
-  <BuildComponent props={props} view={SocialView} />
+  <ComponentBuilder props={props} view={SocialView} />
 );
 
 export default Social;

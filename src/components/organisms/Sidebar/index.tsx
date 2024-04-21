@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
 import SidebarView from "./Sidebar.view";
 import useSidebarController from "./Sidebar.controller";
-import BuildComponent from "../../../utils/BuildComponent";
+import ComponentBuilder from "../../../common/builders/ComponentBuilder";
 
 const Sidebar = (): ReactElement => (
-  <BuildComponent controller={useSidebarController} view={SidebarView} />
+  <ComponentBuilder controller={useSidebarController} view={SidebarView} />
 );
 
 export default Sidebar;
