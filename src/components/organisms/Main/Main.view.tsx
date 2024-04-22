@@ -17,7 +17,7 @@ const MainView = ({ t, jobDetailsRecords }: MainControllerReturn): ReactElement 
   >
     <Title textTransform="uppercase">{t("professionalHistory.title")}</Title>
     <Space height={globalCss.defaultIntercalationSpacing} />
-    <Stack spacing={3}>
+    <Stack spacing={4}>
       {jobDetailsRecords.map((jobDetails) => (
         <JobDetails key={jobDetails.jobTitle.concat(jobDetails.company)} {...jobDetails} />
       ))}

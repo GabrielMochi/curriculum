@@ -1,11 +1,12 @@
-import type { ComponentProps } from "react";
-import type Contact from "../../molecules/Contact";
-import type Social from "../../molecules/Social";
-import type AcademicEducation from "../../molecules/AcademicEducation";
 import type { ControllerWithTranslation } from "../../../types";
+import type { ContactProps } from "../../molecules/Contact/Contact.interface";
+import type { SocialProps } from "../../molecules/Social/Social.interface";
+import type { AcademicEducationProps } from "../../molecules/AcademicEducation/AcademicEducation.interface";
+import type { CertificationProps } from "../../molecules/Certification/Certification.interface";
 
 export type SidebarControllerReturn = ControllerWithTranslation<{
-  contactRecords: ComponentProps<typeof Contact>[];
-  socialRecords: ComponentProps<typeof Social>[];
-  academicEducationRecords: ComponentProps<typeof AcademicEducation>[];
+  contactRecords: ContactProps[];
+  socialRecords: SocialProps[];
+  academicEducationRecords: AcademicEducationProps[];
+  certificationRecords: CertificationProps[];
 }>;

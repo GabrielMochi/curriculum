@@ -10,10 +10,6 @@
       "label": "Location",
       "value": "Montreal, QC, Canada"
     },
-    "phone": {
-      "label": "Phone",
-      "value": "+1 (437) 233-3740"
-    },
     "email": {
       "label": "E-mail",
       "value": "contact@gabrielmochi.dev"
@@ -33,34 +29,40 @@
   },
   "academicEducation": {
     "label": "Academic Education",
-    "ifsp": {
-      "courseTitle": "Professional Degree in Information Systems",
-      "institutionName": "Instituto Federal de São Paulo (IFSP)",
-      "period": {
-        "startYear": "2016",
-        "endYear": "2019"
+    "incomplete": "incomplete",
+    "records": {
+      "fatec": {
+        "courseTitle": "Analysis and Systems Development",
+        "institutionName": "Faculdade de Tecnologia de São Paulo (FATEC-SP)"
+      },
+      "ifsp": {
+        "courseTitle": "Professional Degree in Information Technology",
+        "institutionName": "Instituto Federal de São Paulo (IFSP)"
       }
-    },
-    "prandiano": {
-      "courseTitle": "Applied mathematics",
-      "institutionName": "Prandiano - Museum of Mathematics",
-      "period": {
-        "startYear": "2016"
-      }
-    },
-    "conquer": {
-      "courseTitle": "Grow your business (Entrepreneurship)",
-      "institutionName": "Conquer School",
-      "period": {
-        "startYear": "2020"
-      }
-    },
-    "cellep": {
-      "courseTitle": "English classes (Pre-intermediate 1 – Advanced Plus)",
-      "institutionName": "CEL.LEP",
-      "period": {
-        "startYear": "2012",
-        "endYear": "2019"
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "records": {
+      "conquer": {
+        "certificationTitle": "Grow your business (Entrepreneurship)",
+        "institutionName": "Conquer School"
+      },
+      "conquerSales": {
+        "certificationTitle": "Negotiation, Influence and Sales",
+        "institutionName": "Conquer School"
+      },
+      "ibmBluemix": {
+        "certificationTitle": "Bluemix Essentials",
+        "institutionName": "IBM"
+      },
+      "prandiano": {
+        "certificationTitle": "Applied Mathematics",
+        "institutionName": "Prandiano - Museum of Mathematics"
+      },
+      "cambridge": {
+        "certificationTitle": "English Entry Level Certificate in ESOL International (Entry 2)",
+        "institutionName": "Cambridge University Press & Assessment English"
       }
     }
   },
@@ -77,17 +79,29 @@
           "state": "QC",
           "country": "Canada"
         },
-        "description": "In his role as a Senior Software Engineer at Estateably, he plays a significant part in the company's expansion efforts within the legal and banking sectors. He actively contributes to the development of both backend and frontend components, consistently adhering to industry-leading standards in code quality, system architecture, and security. His unwavering commitment to these best practices was instrumental in maintaining the scalability and responsiveness of Estateably's systems, enabling the company to meet the ever-changing demands of its clients and stay competitive in the industry."
+        "description": {
+          "highlights": [
+            "In his role as a Senior Software Engineer at Estateably, he plays a significant part in the company's expansion efforts within the legal and banking sectors. He actively contributes to the development of both backend and frontend components, consistently adhering to industry-leading standards in code quality, system architecture, and security. His unwavering commitment to these best practices was instrumental in maintaining the scalability and responsiveness of Estateably's systems, enabling the company to meet the ever-changing demands of its clients and stay competitive in the industry."
+          ]
+        }
       },
       "monis": {
         "company": "Monis",
-        "jobTitle": "Software Engineer & Founding Partner",
+        "jobTitle": "Founding Software Engineer",
         "location": {
           "city": "São Paulo",
           "state": "SP",
           "country": "Brazil"
         },
-        "description": "As a founding member of Monis, he served as one of the first software engineers on the team, tasked with the ambitious mission of building the entire system from scratch. In this capacity:\n\n- Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the Typeorm library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.\n\n- Web Platform Development with Next.js: He led the way in spearheading the development of the web platform using Next.js, marking a significant milestone as it became the first platform for users to interact with the Monis system.\n\n- Design and Construction of Intuitive Admin Portal: He designed and built an intuitive admin portal that empowered employees to manage users efficiently. This portal was developed using Flutter for the web, setting the stage for future cross-platform development of the Monis app for iOS and Android.\n\n- Active Contribution to CI/CD Implementation and Automated Testing: He played an active role in contributing to the implementation of the initial Continuous Integration/Continuous Deployment (CI/CD) processes and automated testing, ensuring the unwavering reliability and stability of Monis' applications.\n\n- Leveraging Docker for Containerized Deployments: He harnessed Docker to create robust container structures for deploying applications within the GCP-architected infrastructure. Initially, VM instances served as the hosting environment for these applications. However, as the demand for scalability and operational efficiency continued to rise, the team oversaw the gradual migration of these monolithic applications to Cloud Run, a more flexible and scalable container deployment service.\n\nHis contributions at Monis underscore his technical expertise and commitment to pioneering innovative solutions in the fintech sector."
+        "description": {
+          "highlights": [
+            "Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the Typeorm library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.",
+            "Web Platform Development with Next.js: He led the way in spearheading the development of the web platform using Next.js, marking a significant milestone as it became the first platform for users to interact with the Monis system.",
+            "Design and Construction of Intuitive Admin Portal: He designed and built an intuitive admin portal that empowered employees to manage users efficiently. This portal was developed using Flutter for the web, setting the stage for future cross-platform development of the Monis app for iOS and Android.",
+            "Active Contribution to CI/CD Implementation and Automated Testing: He played an active role in contributing to the implementation of the initial Continuous Integration/Continuous Deployment (CI/CD) processes and automated testing, ensuring the unwavering reliability and stability of Monis' applications.",
+            "Leveraging Docker for Containerized Deployments: He harnessed Docker to create robust container structures for deploying applications within the GCP-architected infrastructure. Initially, VM instances served as the hosting environment for these applications. However, as the demand for scalability and operational efficiency continued to rise, the team oversaw the gradual migration of these monolithic applications to Cloud Run, a more flexible and scalable container deployment service."
+          ]
+        }
       },
       "mutant": {
         "company": "Mutant",
@@ -97,7 +111,15 @@
           "state": "SP",
           "country": "Brazil"
         },
-        "description": "In his role as a Back-End Engineer at Mutant, he took on a diverse set of responsibilities to bolster the chatbot ecosystem:\n\n- Development of Chatbot Flows with Node.js and Typescript: Leveraging Node.js and Typescript, he skillfully crafted chatbot flows that enabled precise responses aligned with user message intent. The application integrated external NLP services, which were developed in Python, to discern message intent. These interactions primarily took place on WhatsApp's front-end. Furthermore, he adeptly facilitated HTTP calls to Google Maps APIs when necessary to provide location-based information in specific chatbot flows.\n\n- Adherence to Scrum Methodologies within a Collaborative Squad: Operating within a Scrum squad, he adhered to Scrum methodologies to ensure project success. Utilizing Jira, the team effectively organized sprints and conducted essential ceremonies. His role extended beyond creating new flows; he also played a key part in identifying and resolving bugs reported by the QA team.\n\n- Authoring and Maintenance of Comprehensive Documentation: He took responsibility for authoring and maintaining documentation, with a specific emphasis on project READMEs and Swagger documentation for APIs. These resources played a pivotal role in efficient project management and the seamless integration of various components.\n\n- Optimization of Git Flow and Branch Partitioning: He collaborated on optimizing the existing Git Flow, devising an innovative branch partitioning approach that streamlined development processes. This innovative strategy enhanced the potential for smoother rollouts, if required, contributing to a more efficient development workflow.\n\n- Enhancements to Deployment Workflows: He made minor yet impactful adjustments to improve deployment workflows. His focus primarily centered on modifications within the Bitbucket settings file, which was essential for AWS deployments, and the Dockerfile, ensuring the deployment process was more streamlined and reliable.\n\nAt Mutant, his adeptness in efficiently operating within a collaborative and agile development environment underscored his strong proficiency in Back-End Engineering."
+        "description": {
+          "highlights": [
+            "Development of Chatbot Flows with Node.js and Typescript: Leveraging Node.js and Typescript, he skillfully crafted chatbot flows that enabled precise responses aligned with user message intent. The application integrated external NLP services, which were developed in Python, to discern message intent. These interactions primarily took place on WhatsApp's front-end. Furthermore, he adeptly facilitated HTTP calls to Google Maps APIs when necessary to provide location-based information in specific chatbot flows.",
+            "Adherence to Scrum Methodologies within a Collaborative Squad: Operating within a Scrum squad, he adhered to Scrum methodologies to ensure project success. Utilizing Jira, the team effectively organized sprints and conducted essential ceremonies. His role extended beyond creating new flows; he also played a key part in identifying and resolving bugs reported by the QA team.",
+            "Authoring and Maintenance of Comprehensive Documentation: He took responsibility for authoring and maintaining documentation, with a specific emphasis on project READMEs and Swagger documentation for APIs. These resources played a pivotal role in efficient project management and the seamless integration of various components.",
+            "Optimization of Git Flow and Branch Partitioning: He collaborated on optimizing the existing Git Flow, devising an innovative branch partitioning approach that streamlined development processes. This innovative strategy enhanced the potential for smoother rollouts, if required, contributing to a more efficient development workflow.",
+            "Enhancements to Deployment Workflows: He made minor yet impactful adjustments to improve deployment workflows. His focus primarily centered on modifications within the Bitbucket settings file, which was essential for AWS deployments, and the Dockerfile, ensuring the deployment process was more streamlined and reliable."
+          ]
+        }
       },
       "kpmg": {
         "company": "KPMG",
@@ -107,17 +129,30 @@
           "state": "SP",
           "country": "Brazil"
         },
-        "description": "As a Full Stack Developer at KPMG, he undertook a diverse range of responsibilities that played a pivotal role in optimizing internal processes and enhancing user experiences. His contributions included:\n\n- Automating Internal Audit Processes with NLP Tools: He spearheaded the automation of internal audit procedures by harnessing the power of Natural Language Processing (NLP) tools. These tools were utilized for document analysis, ensuring greater efficiency and accuracy in the audit workflow. Simultaneously, he developed user-friendly web applications that allowed seamless interaction with these NLP tools.\n\n- Chatbot Development with IBM Watson and Microsoft Bot Framework: Leveraging IBM Watson Conversation and Microsoft Bot Framework primarily, he designed and deployed chatbots that improved communication within the organization. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features. Additionally, he integrated some chatbots with external APIs, including weather and currency quotes, to provide users with valuable real-time information.\n\n- Innovative Financial Market Projects: He actively participated in projects targeting the financial market, where he played a key role in developing intelligent applications. These applications were designed to automate interbank transactions and streamline bank processes related to such transactions. This contributed significantly to the efficiency and competitiveness of KPMG's clients in the financial sector.\n\n- Crawler Development for Process Automation: To further enhance automation capabilities, he developed web crawlers using Selenium in Java and Puppeteer in Node.js. These crawlers were instrumental in automating various complex processes and data extraction tasks. Many of these applications were optimized with multithreading capabilities to ensure swift and efficient processing.\n\nOverall, his tenure as a Full Stack Developer at KPMG was marked by a relentless pursuit of innovation and a commitment to leveraging cutting-edge technologies to drive operational excellence and deliver superior value to clients and internal stakeholders."
+        "description": {
+          "highlights": [
+            "Automating Internal Audit Processes with NLP Tools: He spearheaded the automation of internal audit procedures by harnessing the power of Natural Language Processing (NLP) tools. These tools were utilized for document analysis, ensuring greater efficiency and accuracy in the audit workflow. Simultaneously, he developed user-friendly web applications that allowed seamless interaction with these NLP tools.",
+            "Chatbot Development with IBM Watson and Microsoft Bot Framework: Leveraging IBM Watson Conversation and Microsoft Bot Framework primarily, he designed and deployed chatbots that improved communication within the organization. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features. Additionally, he integrated some chatbots with external APIs, including weather and currency quotes, to provide users with valuable real-time information.",
+            "Innovative Financial Market Projects: He actively participated in projects targeting the financial market, where he played a key role in developing intelligent applications. These applications were designed to automate interbank transactions and streamline bank processes related to such transactions. This contributed significantly to the efficiency and competitiveness of KPMG's clients in the financial sector.",
+            "Crawler Development for Process Automation: To further enhance automation capabilities, he developed web crawlers using Selenium in Java and Puppeteer in Node.js. These crawlers were instrumental in automating various complex processes and data extraction tasks. Many of these applications were optimized with multithreading capabilities to ensure swift and efficient processing."
+          ]
+        }
       },
       "britech": {
         "company": "BRITech",
-        "jobTitle": "Cognitive Technology Developer",
+        "jobTitle": "Full Stack Developer Intern",
         "location": {
           "city": "São Paulo",
           "state": "SP",
           "country": "Brazil"
         },
-        "description": "As a Cognitive Technology Developer at BRITech, he excelled in the following key responsibilities:\n\n- Financial Market-Centric Chatbot Development: He took the lead in spearheading the development of chatbots with a focus on the financial market. These chatbots were designed to address customers' initial support inquiries. He integrated with Watson services, including Watson Retrieve and Rank and Watson Discovery, harnessing advanced natural language processing techniques. This integration allowed them to extract vital information from internal product documentation with precision.\n\n- Collaborative Development of Financial Market Application: He helped develop a specialized financial market application. He utilized the Aurelia Framework and Typescript to create a robust and tailored solution that catered to the unique needs of the company's clientele in the financial sector.\n\n- ZenDesk Chatbot Integration: He integrated a Help Desk Bot into ZenDesk. This innovative solution had a transformative impact on customer interactions, raising the bar for support quality and ensuring first-rate support and customer satisfaction."
+        "description": {
+          "highlights": [
+            "Developed a ChatBot for first-level support, which aimed to assist users with questions about the usability of an internal product provided by BRITech. Customers interacted with the bot through a web application developed in HTML, CSS, and JavaScript. The messaging service was developed in Node.js, which, through an API, integrated with IBM Watson's NLP services to obtain answers to users' questions.",
+            "Taking advantage of the aforementioned bot's capacity, he developed a service in Node.js that integrated ZenDesk requests with the IBM Watson APIs. This way, users who opened tickets through ZenDesk would already receive a personalized and instantaneous response from the bot without the initial need for human activation.",
+            "Within a squad, he collaborated with small improvements and bug fixes in a frontend project that used the Aurelia framework and TypeScript."
+          ]
+        }
       }
     }
   }

@@ -1,11 +1,15 @@
 import type { ReactElement } from "react";
 import { Box, Stack } from "@mui/material";
-import type { SidebarStackProps } from "./SidebarStack.interface";
+import type { SidebarSectionProps } from "./SidebarSection.interface";
 import Space from "../../atoms/Space";
 import globalCss from "../../../theme/globalCss";
 import Title from "../../atoms/Title";
 
-const SidebarStackView = ({ title, children, spacing = 2 }: SidebarStackProps): ReactElement => (
+const SidebarSectionView = ({
+  title,
+  children,
+  spacing = 2,
+}: SidebarSectionProps): ReactElement => (
   <Box>
     <Title textTransform="uppercase">{title}</Title>
     <Space height={globalCss.defaultIntercalationSpacing} />
@@ -13,4 +17,4 @@ const SidebarStackView = ({ title, children, spacing = 2 }: SidebarStackProps): 
   </Box>
 );
 
-export default SidebarStackView;
+export default SidebarSectionView;

@@ -4,6 +4,7 @@ import linkedinLogoSvg from "../../../assets/images/social/linkedin-logo.svg";
 import githubLogoSvg from "../../../assets/images/social/github-logo.svg";
 import stackOverflowLogoSvg from "../../../assets/images/social/stack-overflow-logo.svg";
 import useTranslationController from "../../../common/controllers/Translation.controller";
+import { sortAcademicEducationRecords, sortCertificationRecords } from "../../../utils";
 
 const useSidebarController = (): SidebarControllerReturn => {
   const { t } = useTranslationController();
@@ -12,10 +13,6 @@ const useSidebarController = (): SidebarControllerReturn => {
     {
       label: t("contact.location.label"),
       value: t("contact.location.value"),
-    },
-    {
-      label: t("contact.phone.label"),
-      value: t("contact.phone.value"),
     },
     {
       label: t("contact.email.label"),
@@ -41,40 +38,57 @@ const useSidebarController = (): SidebarControllerReturn => {
     },
   ];
 
-  const academicEducationRecords: SidebarControllerReturn["academicEducationRecords"] = [
-    {
-      courseTitle: t("academicEducation.ifsp.courseTitle"),
-      institutionName: t("academicEducation.ifsp.institutionName"),
-      period: {
-        startYear: t("academicEducation.ifsp.period.startYear"),
-        endYear: t("academicEducation.ifsp.period.endYear"),
+  const academicEducationRecords: SidebarControllerReturn["academicEducationRecords"] =
+    sortAcademicEducationRecords([
+      {
+        courseTitle: t("academicEducation.records.fatec.courseTitle"),
+        institutionName: t("academicEducation.records.fatec.institutionName"),
+        period: {
+          startYear: 2020,
+          endYear: 2021,
+        },
+        isIncomplete: true,
       },
-    },
-    {
-      courseTitle: t("academicEducation.prandiano.courseTitle"),
-      institutionName: t("academicEducation.prandiano.institutionName"),
-      period: {
-        startYear: t("academicEducation.prandiano.period.startYear"),
+      {
+        courseTitle: t("academicEducation.records.ifsp.courseTitle"),
+        institutionName: t("academicEducation.records.ifsp.institutionName"),
+        period: {
+          startYear: 2016,
+          endYear: 2019,
+        },
       },
-    },
-    {
-      courseTitle: t("academicEducation.conquer.courseTitle"),
-      institutionName: t("academicEducation.conquer.institutionName"),
-      period: {
-        startYear: t("academicEducation.conquer.period.startYear"),
-      },
-    },
-    {
-      courseTitle: t("academicEducation.cellep.courseTitle"),
-      institutionName: t("academicEducation.cellep.institutionName"),
-      period: {
-        startYear: t("academicEducation.cellep.period.startYear"),
-        endYear: t("academicEducation.cellep.period.endYear"),
-      },
-    },
-  ];
+    ]);
 
-  return { t, contactRecords, socialRecords, academicEducationRecords };
+  const certificationRecords: SidebarControllerReturn["certificationRecords"] =
+    sortCertificationRecords([
+      {
+        certificationTitle: t("certifications.records.conquer.certificationTitle"),
+        institutionName: t("certifications.records.conquer.institutionName"),
+        year: 2020,
+      },
+      {
+        certificationTitle: t("certifications.records.conquerSales.certificationTitle"),
+        institutionName: t("certifications.records.conquerSales.institutionName"),
+        year: 2018,
+      },
+      {
+        certificationTitle: t("certifications.records.prandiano.certificationTitle"),
+        institutionName: t("certifications.records.prandiano.institutionName"),
+        year: 2017,
+      },
+      {
+        certificationTitle: t("certifications.records.ibmBluemix.certificationTitle"),
+        institutionName: t("certifications.records.ibmBluemix.institutionName"),
+        year: 2016,
+      },
+      {
+        certificationTitle: t("certifications.records.cambridge.certificationTitle"),
+        institutionName: t("certifications.records.cambridge.institutionName"),
+        year: 2013,
+      },
+    ]);
+
+  return { t, contactRecords, socialRecords, academicEducationRecords, certificationRecords };
 };
 
 export default useSidebarController;

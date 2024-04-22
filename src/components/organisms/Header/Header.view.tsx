@@ -6,9 +6,9 @@ import zigzag from "../../../assets/images/zigzag.svg";
 import globalCss from "../../../theme/globalCss";
 import Title from "../../atoms/Title";
 import Callout from "../../atoms/Callout";
-import type { ControllerWithTranslation } from "../../../types";
+import type { TranslationControllerReturn } from "../../../common/controllers/Translation.controller";
 
-const HeaderView = ({ t }: ControllerWithTranslation): ReactElement => (
+const HeaderView = ({ t }: TranslationControllerReturn): ReactElement => (
   <Box
     component="header"
     bgcolor="primary.main"

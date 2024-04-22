@@ -3,10 +3,10 @@ import { Box, Chip, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
 import md5 from "md5";
+import Markdown from "react-markdown";
 import type { JobDetailsProps } from "./JobDetails.interface";
-import Space from "../../atoms/Space";
 import Text from "../../atoms/Text";
-import type { ControllerWithTranslation } from "../../../types";
+import type { TranslationControllerReturn } from "../../../common/controllers/Translation.controller";
 
 const JobDetailsView = ({
   t,
@@ -16,7 +16,7 @@ const JobDetailsView = ({
   location,
   description,
   skills,
-}: JobDetailsProps & ControllerWithTranslation): ReactElement => (
+}: JobDetailsProps & TranslationControllerReturn): ReactElement => (
   <Box component="section">
     <Box display="flex" justifyContent="space-between" alignItems="center">
       <Text fontWeight="700">
@@ -38,15 +38,13 @@ const JobDetailsView = ({
         )}
       </Text>
     </Box>
-    <Space height={12} />
     <Box>
       {description.split("\n").map((text, i) => (
         <Text key={md5(text).concat(i.toString())} textAlign="justify" minHeight={16}>
-          {text}
+          <Markdown>{text}</Markdown>
         </Text>
       ))}
     </Box>
-    <Space height={12} />
     <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={2}>
       {skills.map((skill) => (
         <Chip

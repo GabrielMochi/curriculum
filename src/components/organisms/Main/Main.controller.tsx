@@ -1,6 +1,8 @@
 import type { MainControllerReturn } from "./Main.interface";
 import type { JobDetailsProps } from "../../molecules/JobDetails/JobDetails.interface";
 import useTranslationController from "../../../common/controllers/Translation.controller";
+import { TextStructureStack } from "../../../common/models/TextStructureStack.model";
+import { BulletPoints } from "../../../common/models/BulletPoints.model";
 
 const useMainController = (): MainControllerReturn => {
   const { t } = useTranslationController();
@@ -16,7 +18,11 @@ const useMainController = (): MainControllerReturn => {
       state: t("professionalHistory.records.estateably.location.state"),
       country: t("professionalHistory.records.estateably.location.country"),
     },
-    description: t("professionalHistory.records.estateably.description"),
+    description: new TextStructureStack(
+      new BulletPoints(
+        t("professionalHistory.records.estateably.description.highlights", { returnObjects: true }),
+      ),
+    ).toMarkdown(),
     skills: [
       "Node.js",
       "TypeScript",
@@ -43,7 +49,11 @@ const useMainController = (): MainControllerReturn => {
       state: t("professionalHistory.records.monis.location.state"),
       country: t("professionalHistory.records.monis.location.country"),
     },
-    description: t("professionalHistory.records.monis.description"),
+    description: new TextStructureStack(
+      new BulletPoints(
+        t("professionalHistory.records.monis.description.highlights", { returnObjects: true }),
+      ),
+    ).toMarkdown(),
     skills: [
       "Node.js",
       "TypeScript",
@@ -73,7 +83,11 @@ const useMainController = (): MainControllerReturn => {
       state: t("professionalHistory.records.mutant.location.state"),
       country: t("professionalHistory.records.mutant.location.country"),
     },
-    description: t("professionalHistory.records.mutant.description"),
+    description: new TextStructureStack(
+      new BulletPoints(
+        t("professionalHistory.records.mutant.description.highlights", { returnObjects: true }),
+      ),
+    ).toMarkdown(),
     skills: [
       "Node.js",
       "TypeScript",
@@ -101,7 +115,11 @@ const useMainController = (): MainControllerReturn => {
       state: t("professionalHistory.records.kpmg.location.state"),
       country: t("professionalHistory.records.kpmg.location.country"),
     },
-    description: t("professionalHistory.records.kpmg.description"),
+    description: new TextStructureStack(
+      new BulletPoints(
+        t("professionalHistory.records.kpmg.description.highlights", { returnObjects: true }),
+      ),
+    ).toMarkdown(),
     skills: [
       "Node.js",
       "Python",
@@ -132,17 +150,21 @@ const useMainController = (): MainControllerReturn => {
       state: t("professionalHistory.records.britech.location.state"),
       country: t("professionalHistory.records.britech.location.country"),
     },
-    description: t("professionalHistory.records.britech.description"),
+    description: new TextStructureStack(
+      new BulletPoints(
+        t("professionalHistory.records.britech.description.highlights", { returnObjects: true }),
+      ),
+    ).toMarkdown(),
     skills: [
       "Node.js",
-      "JS",
+      "JavaScript",
       "HTML",
       "CSS",
-      "MySQL",
+      "IBM Watson",
+      "NLP",
       "Aurelia",
       "TypeScript",
-      "Chatbots",
-      "Xamarin",
+      "MySQL",
     ],
   };
 
