@@ -131,10 +131,12 @@
         },
         "description": {
           "highlights": [
-            "Automating Internal Audit Processes with NLP Tools: He spearheaded the automation of internal audit procedures by harnessing the power of Natural Language Processing (NLP) tools. These tools were utilized for document analysis, ensuring greater efficiency and accuracy in the audit workflow. Simultaneously, he developed user-friendly web applications that allowed seamless interaction with these NLP tools.",
-            "Chatbot Development with IBM Watson and Microsoft Bot Framework: Leveraging IBM Watson Conversation and Microsoft Bot Framework primarily, he designed and deployed chatbots that improved communication within the organization. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features. Additionally, he integrated some chatbots with external APIs, including weather and currency quotes, to provide users with valuable real-time information.",
-            "Innovative Financial Market Projects: He actively participated in projects targeting the financial market, where he played a key role in developing intelligent applications. These applications were designed to automate interbank transactions and streamline bank processes related to such transactions. This contributed significantly to the efficiency and competitiveness of KPMG's clients in the financial sector.",
-            "Crawler Development for Process Automation: To further enhance automation capabilities, he developed web crawlers using Selenium in Java and Puppeteer in Node.js. These crawlers were instrumental in automating various complex processes and data extraction tasks. Many of these applications were optimized with multithreading capabilities to ensure swift and efficient processing."
+            "He created web portals using Vue.js/Nuxt and Node.js so that users could access artificial intelligence tools. These portals' records and data were stored in a MongoDB database, and the user sessions were kept in Redis.",
+            "Using IBM Watson Conversation and Microsoft Bot Framework, he designed and deployed chatbots that improved communication within the organization. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features.",
+            "Was responsible for maintenance, versioning (Git), and ensuring the functioning of these web portals hosted on IIS servers within virtual machines.",
+            "At clients' request, he automated several internal audit and financial services processes with Node.js. Most of these automations were integrated with Watson APIs (IBM Cloud) or Microsoft Azure artificial intelligence services.",
+            "Developed Web Scrapers using tools such as Selenium and Puppeteer.",
+            "Contributed to improving artificial intelligence models using Python, R and Java."
           ]
         }
       },
