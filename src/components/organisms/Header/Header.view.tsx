@@ -17,7 +17,7 @@ const HeaderView = ({ t }: TranslationControllerReturn): ReactElement => (
     py={10}
   >
     <Box>
-      <Callout textTransform="uppercase">
+      <Callout fontFamily="Raleway" textTransform="uppercase">
         <Box component="span" fontWeight="700">
           {t("intro.firstName")}
         </Box>{" "}

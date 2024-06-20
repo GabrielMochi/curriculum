@@ -2,11 +2,11 @@ import type { ReactElement } from "react";
 import { Box, Chip, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import { subslate } from "subslate";
-import md5 from "md5";
-import Markdown from "react-markdown";
 import type { JobDetailsProps } from "./JobDetails.interface";
 import Text from "../../atoms/Text";
 import type { TranslationControllerReturn } from "../../../common/controllers/Translation.controller";
+import MarkdownText from "../../atoms/MarkdownText";
+import Space from "../../atoms/Space";
 
 const JobDetailsView = ({
   t,
@@ -38,13 +38,15 @@ const JobDetailsView = ({
         )}
       </Text>
     </Box>
-    <Box>
-      {description.split("\n").map((text, i) => (
-        <Text key={md5(text).concat(i.toString())} textAlign="justify" minHeight={16}>
-          <Markdown>{text}</Markdown>
-        </Text>
-      ))}
-    </Box>
+    <Space height={16} />
+    <MarkdownText
+      textAlign="justify"
+      minHeight={16}
+      sx={{ "& ul": { paddingInlineStart: "16px" } }}
+    >
+      {description}
+    </MarkdownText>
+    <Space height={16} />
     <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={2}>
       {skills.map((skill) => (
         <Chip

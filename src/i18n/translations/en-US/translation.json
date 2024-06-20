@@ -2,7 +2,7 @@
   "intro": {
     "firstName": "Gabriel",
     "lastName": "Mochi",
-    "role": "Senior Software Engineer"
+    "role": "Senior Full Stack Developer"
   },
   "contact": {
     "label": "Contact",
@@ -59,21 +59,21 @@
       "prandiano": {
         "certificationTitle": "Applied Mathematics",
         "institutionName": "Prandiano - Museum of Mathematics"
-      },
-      "cambridge": {
-        "certificationTitle": "English Entry Level Certificate in ESOL International (Entry 2)",
-        "institutionName": "Cambridge University Press & Assessment English"
       }
     }
+  },
+  "about": {
+    "title": "about",
+    "description": "I'm a **Senior Software Engineer** and **Full Stack Developer** with **over eight years of experience** building web applications, servers, APIs, and process automation.\n\nAs a developer, my central dilemma is developing code that is readable not only for the computer, but _especially for humans_. This implies a well-structured code that follows the principles of good practice and is easy to maintain.\n\nIn addition to the other skills listed in my profile, this is **my main stack**: Node.js, React, Next.js, Nest.js, TypeScript, JavasScript, MongoDB, PostgreSQL, and Redis."
   },
   "professionalHistory": {
     "periodDateFormat": "MMM YYYY",
     "present": "Present",
-    "title": "Professional History",
+    "title": "Professional Experience",
     "records": {
       "estateably": {
         "company": "Estateably",
-        "jobTitle": "Senior Software Engineer",
+        "jobTitle": "Senior Full Stack Developer",
         "location": {
           "city": "Montreal",
           "state": "QC",
@@ -95,7 +95,7 @@
         },
         "description": {
           "highlights": [
-            "Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the Typeorm library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.",
+            "Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the TypeORM library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.",
             "Web Platform Development with Next.js: He led the way in spearheading the development of the web platform using Next.js, marking a significant milestone as it became the first platform for users to interact with the Monis system.",
             "Design and Construction of Intuitive Admin Portal: He designed and built an intuitive admin portal that empowered employees to manage users efficiently. This portal was developed using Flutter for the web, setting the stage for future cross-platform development of the Monis app for iOS and Android.",
             "Active Contribution to CI/CD Implementation and Automated Testing: He played an active role in contributing to the implementation of the initial Continuous Integration/Continuous Deployment (CI/CD) processes and automated testing, ensuring the unwavering reliability and stability of Monis' applications.",
@@ -123,7 +123,7 @@
       },
       "kpmg": {
         "company": "KPMG",
-        "jobTitle": "Full Stack Developer",
+        "jobTitle": "Junior Full Stack Developer",
         "location": {
           "city": "São Paulo",
           "state": "SP",
@@ -142,7 +142,7 @@
       },
       "britech": {
         "company": "BRITech",
-        "jobTitle": "Full Stack Developer Intern",
+        "jobTitle": "Developer Intern",
         "location": {
           "city": "São Paulo",
           "state": "SP",

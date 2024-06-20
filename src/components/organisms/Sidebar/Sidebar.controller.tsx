@@ -72,19 +72,14 @@ const useSidebarController = (): SidebarControllerReturn => {
         year: 2018,
       },
       {
-        certificationTitle: t("certifications.records.prandiano.certificationTitle"),
-        institutionName: t("certifications.records.prandiano.institutionName"),
+        certificationTitle: t("certifications.records.ibmBluemix.certificationTitle"),
+        institutionName: t("certifications.records.ibmBluemix.institutionName"),
         year: 2017,
       },
       {
-        certificationTitle: t("certifications.records.ibmBluemix.certificationTitle"),
-        institutionName: t("certifications.records.ibmBluemix.institutionName"),
+        certificationTitle: t("certifications.records.prandiano.certificationTitle"),
+        institutionName: t("certifications.records.prandiano.institutionName"),
         year: 2016,
-      },
-      {
-        certificationTitle: t("certifications.records.cambridge.certificationTitle"),
-        institutionName: t("certifications.records.cambridge.institutionName"),
-        year: 2013,
       },
     ]);
 

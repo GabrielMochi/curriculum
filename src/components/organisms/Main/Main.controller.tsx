@@ -59,7 +59,7 @@ const useMainController = (): MainControllerReturn => {
       "TypeScript",
       "Nest.js",
       "Docker",
-      "Postgress",
+      "PostgreSQL",
       "Redis",
       "React",
       "Next.js",
