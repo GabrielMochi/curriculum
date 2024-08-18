@@ -18,7 +18,7 @@ const JobDetailsView = ({
   skills,
 }: JobDetailsProps & TranslationControllerReturn): ReactElement => (
   <Box component="section">
-    <Box display="flex" justifyContent="space-between" alignItems="center">
+    <Box display="flex" justifyContent="space-between" alignItems="center" columnGap={2}>
       <Text fontWeight="700">
         {company} | {jobTitle}
       </Text>

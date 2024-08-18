@@ -14,7 +14,7 @@ const HeaderView = ({ t }: TranslationControllerReturn): ReactElement => (
     bgcolor="primary.main"
     color="white"
     px={globalCss.horizontalSpacing}
-    py={10}
+    py={{ xs: 5, sm: 7, md: 10 }}
   >
     <Box>
       <Callout fontFamily="Raleway" textTransform="uppercase">
@@ -29,9 +29,13 @@ const HeaderView = ({ t }: TranslationControllerReturn): ReactElement => (
       <Title textTransform="uppercase">{t("intro.role")}</Title>
     </Box>
     <Space height={theme.spacing(4)} />
-    <Box height="28.5px" width="304px">
-      <img height="28.5px" width="304px" src={zigzag} alt="zigzag" />
-    </Box>
+    <Box
+      component="img"
+      src={zigzag}
+      alt="zigzag"
+      height={{ xs: "21.375px", sm: "28.5px" }}
+      width={{ xs: "228px", sm: "304px" }}
+    />
   </Box>
 );
 

@@ -6,13 +6,13 @@ import Sidebar from "../../components/organisms/Sidebar";
 import Main from "../../components/organisms/Main";
 
 const SidebarGrid = (): ReactElement => (
-  <Grid xs={12} maxWidth={{ md: "384px" }}>
+  <Grid xs={12} md={4} maxWidth={{ md: "384px" }}>
     <Sidebar />
   </Grid>
 );
 
 const MainGrid = (): ReactElement => (
-  <Grid xs={12}>
+  <Grid xs={12} md={8}>
     <Main />
   </Grid>
 );

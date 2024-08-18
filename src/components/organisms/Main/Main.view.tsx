@@ -21,7 +21,7 @@ const MainView = ({ t, jobDetailsRecords }: MainControllerReturn): ReactElement 
       <Space height={globalCss.defaultIntercalationSpacing} />
       <MarkdownText textAlign="justify">{t("about.description")}</MarkdownText>
     </Box>
-    <Space height={48} />
+    <Space height={{ xs: "32px", md: "48px" }} />
     <Box>
       <Title textTransform="uppercase">{t("professionalHistory.title")}</Title>
       <Space height={globalCss.defaultIntercalationSpacing} />

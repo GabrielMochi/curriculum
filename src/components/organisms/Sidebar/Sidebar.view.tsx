@@ -17,7 +17,7 @@ const SidebarView = ({
 }: SidebarControllerReturn): ReactElement => (
   <Stack
     component="aside"
-    spacing={6}
+    spacing={globalCss.verticalSpacing}
     bgcolor="secondary.main"
     height="100%"
     px={globalCss.horizontalSpacing}
