@@ -12,7 +12,7 @@ const SidebarGrid = (): ReactElement => (
 );
 
 const MainGrid = (): ReactElement => (
-  <Grid xs={12} md={8}>
+  <Grid xs={12} md>
     <Main />
   </Grid>
 );
