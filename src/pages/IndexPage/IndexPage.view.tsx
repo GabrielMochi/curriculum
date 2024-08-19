@@ -1,18 +1,17 @@
 import type { ReactElement } from "react";
-import { Box } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
+import { Box, Grid } from "@mui/material";
 import Header from "../../components/organisms/Header";
 import Sidebar from "../../components/organisms/Sidebar";
 import Main from "../../components/organisms/Main";
 
 const SidebarGrid = (): ReactElement => (
-  <Grid xs={12} md={4} maxWidth={{ md: "384px" }}>
+  <Grid item xs={12} md={4} maxWidth={{ md: "384px" }}>
     <Sidebar />
   </Grid>
 );
 
 const MainGrid = (): ReactElement => (
-  <Grid xs={12} md>
+  <Grid item xs={12} md>
     <Main />
   </Grid>
 );
