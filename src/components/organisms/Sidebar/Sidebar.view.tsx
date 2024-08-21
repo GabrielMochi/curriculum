@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import type { SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarSection from "../../molecules/SidebarSection";
