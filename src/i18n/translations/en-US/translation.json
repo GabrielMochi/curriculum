@@ -81,7 +81,11 @@
         },
         "description": {
           "highlights": [
-            "In his role as a Senior Software Engineer at Estateably, he plays a significant part in the company's expansion efforts within the legal and banking sectors. He actively contributes to the development of both backend and frontend components, consistently adhering to industry-leading standards in code quality, system architecture, and security. His unwavering commitment to these best practices was instrumental in maintaining the scalability and responsiveness of Estateably's systems, enabling the company to meet the ever-changing demands of its clients and stay competitive in the industry."
+            "He Developed several improvements in projects focused on the legal and financial sectors by adding new features, fixing bugs, and resolving technical debt on both the frontend (React + TypeScript) and backend (Node.js).",
+            "Participated in the structuring and development of a new vault platform. The backend of this platform was built using NestJS + TypeScript, while the frontend was developed in React. Data was stored through MongoDB, and uploaded files were stored in AWS S3.",
+            "Collaborated with the backend integration and restructuring of the payment system through Stripe.",
+            "Enhanced and improved the coverage of E2E (Cypress), unit (Jest), and integration tests for each new or modified feature in the product.",
+            "Contributed to the OpenAPI (Swagger) documentation by adding more specifications as new APIs were added or modified."
           ]
         }
       },
@@ -95,11 +99,11 @@
         },
         "description": {
           "highlights": [
-            "Architecting of Server-Side Application with Nest.js: He architected the server-side application using Nest.js (Node.js) and Typescript. This application seamlessly integrated with a PostgreSQL database through the TypeORM library. The system featured robust Redis integration for queue orchestration and seamlessly integrated with various external APIs, including Auth0 for user session management, Amazon Simple Email Service (AWS SES), and Stripe for secure payment processing.",
-            "Web Platform Development with Next.js: He led the way in spearheading the development of the web platform using Next.js, marking a significant milestone as it became the first platform for users to interact with the Monis system.",
-            "Design and Construction of Intuitive Admin Portal: He designed and built an intuitive admin portal that empowered employees to manage users efficiently. This portal was developed using Flutter for the web, setting the stage for future cross-platform development of the Monis app for iOS and Android.",
-            "Active Contribution to CI/CD Implementation and Automated Testing: He played an active role in contributing to the implementation of the initial Continuous Integration/Continuous Deployment (CI/CD) processes and automated testing, ensuring the unwavering reliability and stability of Monis' applications.",
-            "Leveraging Docker for Containerized Deployments: He harnessed Docker to create robust container structures for deploying applications within the GCP-architected infrastructure. Initially, VM instances served as the hosting environment for these applications. However, as the demand for scalability and operational efficiency continued to rise, the team oversaw the gradual migration of these monolithic applications to Cloud Run, a more flexible and scalable container deployment service."
+            "He contributed to the architecture of the server-side application using Nest.js (Node.js) and Typescript. The application integrated with a PostgreSQL database through TypeORM and included Redis for queue orchestration. It also connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
+            "Played a key role in the development of the web platform using Next.js, which became the first platform for users to interact with the Monis system.",
+            "Helped design and build an intuitive admin portal, enabling employees to manage users more efficiently. This portal was developed using Flutter for the web, with the potential for future cross-platform development of the Monis app for iOS and Android.",
+            "He was involved in implementing the initial CI/CD processes and automated testing, contributing to the reliability and stability of Monis' applications.",
+            "Utilized Docker to create container structures for application deployment within a GCP-architected infrastructure. Initially, VM instances hosted the applications, but as the need for scalability grew, the team transitioned to Cloud Run for more flexible and scalable deployments."
           ]
         }
       },
@@ -113,11 +117,11 @@
         },
         "description": {
           "highlights": [
-            "Development of Chatbot Flows with Node.js and Typescript: Leveraging Node.js and Typescript, he skillfully crafted chatbot flows that enabled precise responses aligned with user message intent. The application integrated external NLP services, which were developed in Python, to discern message intent. These interactions primarily took place on WhatsApp's front-end. Furthermore, he adeptly facilitated HTTP calls to Google Maps APIs when necessary to provide location-based information in specific chatbot flows.",
-            "Adherence to Scrum Methodologies within a Collaborative Squad: Operating within a Scrum squad, he adhered to Scrum methodologies to ensure project success. Utilizing Jira, the team effectively organized sprints and conducted essential ceremonies. His role extended beyond creating new flows; he also played a key part in identifying and resolving bugs reported by the QA team.",
-            "Authoring and Maintenance of Comprehensive Documentation: He took responsibility for authoring and maintaining documentation, with a specific emphasis on project READMEs and Swagger documentation for APIs. These resources played a pivotal role in efficient project management and the seamless integration of various components.",
-            "Optimization of Git Flow and Branch Partitioning: He collaborated on optimizing the existing Git Flow, devising an innovative branch partitioning approach that streamlined development processes. This innovative strategy enhanced the potential for smoother rollouts, if required, contributing to a more efficient development workflow.",
-            "Enhancements to Deployment Workflows: He made minor yet impactful adjustments to improve deployment workflows. His focus primarily centered on modifications within the Bitbucket settings file, which was essential for AWS deployments, and the Dockerfile, ensuring the deployment process was more streamlined and reliable."
+            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services, developed in Python, to handle message intent detection. These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows.",
+            "As part of a Scrum squad, he followed Scrum methodologies to support project success. The team used Jira to organize sprints and carry out essential ceremonies. In addition to creating new flows, he also assisted in identifying and resolving bugs reported by the QA team.",
+            "He contributed to the authoring and maintenance of project documentation, focusing on project READMEs and Swagger documentation for APIs. These resources were crucial for efficient project management and the seamless integration of various components.",
+            "He worked with the team to optimize Git Flow, collaborating on a branch partitioning strategy that improved development processes. This approach facilitated smoother rollouts when needed and contributed to a more efficient workflow.",
+            "He made minor improvements to deployment workflows, particularly focusing on the Bitbucket settings file for AWS deployments and the Dockerfile, helping to streamline and enhance the reliability of the deployment process."
           ]
         }
       },
@@ -132,11 +136,11 @@
         "description": {
           "highlights": [
             "He created web portals using Vue.js/Nuxt and Node.js so that users could access artificial intelligence tools. These portals' records and data were stored in a MongoDB database, and the user sessions were kept in Redis.",
-            "Using IBM Watson Conversation and Microsoft Bot Framework, he designed and deployed chatbots that improved communication within the organization. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features.",
+            "Using Node.js, he designed and deployed chatbots that improved organizational communication. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features from IBM Watson Conversation and Microsoft Bot Framework.",
             "Was responsible for maintenance, versioning (Git), and ensuring the functioning of these web portals hosted on IIS servers within virtual machines.",
             "At clients' request, he automated several internal audit and financial services processes with Node.js. Most of these automations were integrated with Watson APIs (IBM Cloud) or Microsoft Azure artificial intelligence services.",
-            "Developed Web Scrapers using tools such as Selenium and Puppeteer.",
-            "Contributed to improving artificial intelligence models using Python, R and Java."
+            "Developed web scrapers using tools such as Selenium and Puppeteer to extract data from the web.",
+            "Contributed, with minor improvements, to artificial intelligence models using Python and R. These models were used by the clients in order to automate cognitive and repetitive tasks made by humans."
           ]
         }
       },
