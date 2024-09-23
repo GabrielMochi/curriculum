@@ -99,7 +99,7 @@
         },
         "description": {
           "highlights": [
-            "He contributed to the architecture of the server-side application using Nest.js (Node.js) and Typescript. The application integrated with a PostgreSQL database through TypeORM and included Redis for queue orchestration. It also connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
+            "He contributed to the architecture of the server-side application using NestJS (Node.js) and Typescript. The application integrated with a PostgreSQL database through TypeORM and included Redis for queue orchestration. It also connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
             "Played a key role in the development of the web platform using Next.js, which became the first platform for users to interact with the Monis system.",
             "Helped design and build an intuitive admin portal, enabling employees to manage users more efficiently. This portal was developed using Flutter for the web, with the potential for future cross-platform development of the Monis app for iOS and Android.",
             "He was involved in implementing the initial CI/CD processes and automated testing, contributing to the reliability and stability of Monis' applications.",
@@ -117,7 +117,7 @@
         },
         "description": {
           "highlights": [
-            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services, developed in Python, to handle message intent detection. These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows.",
+            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services to handle message intent detection. These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows.",
             "As part of a Scrum squad, he followed Scrum methodologies to support project success. The team used Jira to organize sprints and carry out essential ceremonies. In addition to creating new flows, he also assisted in identifying and resolving bugs reported by the QA team.",
             "He contributed to the authoring and maintenance of project documentation, focusing on project READMEs and Swagger documentation for APIs. These resources were crucial for efficient project management and the seamless integration of various components.",
             "He worked with the team to optimize Git Flow, collaborating on a branch partitioning strategy that improved development processes. This approach facilitated smoother rollouts when needed and contributed to a more efficient workflow.",

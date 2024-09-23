@@ -36,6 +36,7 @@ const useMainController = (): MainControllerReturn => {
       "Redis",
       "Docker",
       "Cypress",
+      "Cucumber",
       "Jest",
       "Stripe",
       "Swagger",
@@ -98,15 +99,16 @@ const useMainController = (): MainControllerReturn => {
     skills: [
       "Node.js",
       "TypeScript",
-      "Docker",
-      "AWS",
-      "Bitbucket",
-      "Google API's",
+      "JavaScript",
       "ElasticSearch",
       "Kibana",
+      "Docker",
+      "Bitbucket",
+      "Google API's",
       "Scrum",
       "Jira",
       "Swagger",
+      "AWS",
     ],
   };
 
@@ -131,6 +133,7 @@ const useMainController = (): MainControllerReturn => {
       "Node.js",
       "Vue.js",
       "Nuxt",
+      "JavaScript",
       "MongoDB",
       "Redis",
       "IIS",
@@ -140,7 +143,6 @@ const useMainController = (): MainControllerReturn => {
       "Puppeteer",
       "Python",
       "R",
-      "Java",
     ],
   };
 
@@ -164,13 +166,13 @@ const useMainController = (): MainControllerReturn => {
     skills: [
       "Node.js",
       "JavaScript",
+      "TypeScript",
       "HTML",
       "CSS",
+      "Aurelia",
+      "MySQL",
       "IBM Watson",
       "NLP",
-      "Aurelia",
-      "TypeScript",
-      "MySQL",
     ],
   };
 
