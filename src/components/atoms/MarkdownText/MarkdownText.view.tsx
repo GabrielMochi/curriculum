@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import type { MarkdownTextProps } from "./MarkdownText.interface";
 import Text from "../Text";
 import globalCss from "../../../theme/globalCss";
-import { mergeSxProps } from "../../../utils/functions/mergeSxProps.utils";
+import { mergeSxProps } from "../../../utils/functions/mergeSxProps.util";
 
 const MarkdownTextView = ({ children, sx, ...props }: MarkdownTextProps): ReactElement => (
   <Text component="div" sx={mergeSxProps(globalCss.defaultMarkdownStyles, sx)} {...props}>

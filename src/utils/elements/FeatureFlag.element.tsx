@@ -1,5 +1,5 @@
 import type { PropsWithChildren, ReactElement } from "react";
-import type { FeatureFlags } from "../constants/featureFlags.const";
+import type { FeatureFlags } from "../constants";
 import { isFeatureFlagEnable } from "../functions/isFeatureFlagEnabled.util";
 
 type FeatureFlagProps = {
