@@ -3,7 +3,7 @@ import type { JobDetailsProps } from "../../molecules/JobDetails/JobDetails.inte
 import useTranslationController from "../../../common/controllers/Translation.controller";
 import { TextStructureStack } from "../../../common/models/TextStructureStack.model";
 import { BulletPoints } from "../../../common/models/BulletPoints.model";
-import { Months } from "../../../utils";
+import { Months } from "../../../constants";
 
 const useMainController = (): MainControllerReturn => {
   const { t } = useTranslationController();

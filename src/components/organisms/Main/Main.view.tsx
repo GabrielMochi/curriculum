@@ -6,7 +6,7 @@ import Space from "../../atoms/Space";
 import JobDetails from "../../molecules/JobDetails";
 import Title from "../../atoms/Title";
 import MarkdownText from "../../atoms/MarkdownText";
-import { FeatureFlag } from "../../../utils";
+import { FeatureFlag } from "../../../elements";
 
 const MainView = ({ t, jobDetailsRecords }: MainControllerReturn): ReactElement => (
   <Box

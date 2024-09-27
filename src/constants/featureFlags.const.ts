@@ -1,4 +1,4 @@
-export const FeatureFlags = {
+export const FEATURE_FLAGS = {
   showContact: true,
   showSocial: true,
   showAcademicEducation: true,

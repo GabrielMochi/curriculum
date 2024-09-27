@@ -1,9 +1,9 @@
 import type { PropsWithChildren, ReactElement } from "react";
-import type { FeatureFlags } from "../constants";
-import { isFeatureFlagEnable } from "../functions/isFeatureFlagEnabled.util";
+import { isFeatureFlagEnable } from "../utils";
+import { FEATURE_FLAGS } from "../constants";
 
 type FeatureFlagProps = {
-  featureFlagKey: keyof typeof FeatureFlags;
+  featureFlagKey: keyof typeof FEATURE_FLAGS;
 };
 
 export const FeatureFlag = ({

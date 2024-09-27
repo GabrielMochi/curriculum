@@ -7,7 +7,7 @@ import Contact from "../../molecules/Contact";
 import Social from "../../molecules/Social";
 import AcademicEducation from "../../molecules/AcademicEducation";
 import Certification from "../../molecules/Certification";
-import { FeatureFlag } from "../../../utils";
+import { FeatureFlag } from "../../../elements";
 
 const SidebarView = ({
   t,

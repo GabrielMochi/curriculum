@@ -1,4 +1,4 @@
-import type { AcademicEducationProps } from "../../components/molecules/AcademicEducation/AcademicEducation.interface";
+import type { AcademicEducationProps } from "../components/molecules/AcademicEducation/AcademicEducation.interface";
 
 export const sortAcademicEducationRecords = (
   academicEducationRecords: AcademicEducationProps[],

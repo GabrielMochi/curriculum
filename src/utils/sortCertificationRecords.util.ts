@@ -1,4 +1,4 @@
-import type { CertificationProps } from "../../components/molecules/Certification/Certification.interface";
+import type { CertificationProps } from "../components/molecules/Certification/Certification.interface";
 
 export const sortCertificationRecords = (
   certificationRecords: CertificationProps[],

@@ -7,7 +7,7 @@ import Text from "../../atoms/Text";
 import type { TranslationControllerReturn } from "../../../common/controllers/Translation.controller";
 import MarkdownText from "../../atoms/MarkdownText";
 import Space from "../../atoms/Space";
-import { FeatureFlag } from "../../../utils";
+import { FeatureFlag } from "../../../elements";
 
 const JobDetailsView = ({
   t,
