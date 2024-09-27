@@ -7,6 +7,7 @@ import Text from "../../atoms/Text";
 import type { TranslationControllerReturn } from "../../../common/controllers/Translation.controller";
 import MarkdownText from "../../atoms/MarkdownText";
 import Space from "../../atoms/Space";
+import { FeatureFlag } from "../../../utils";
 
 const JobDetailsView = ({
   t,
@@ -46,17 +47,19 @@ const JobDetailsView = ({
     >
       {description}
     </MarkdownText>
-    <Space height={16} />
-    <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={2}>
-      {skills.map((skill) => (
-        <Chip
-          key={skill}
-          label={<Typography variant="body2">{skill}</Typography>}
-          variant="outlined"
-          color="default"
-        />
-      ))}
-    </Box>
+    <FeatureFlag featureFlagKey="showSkillsChips">
+      <Space height={16} />
+      <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={2}>
+        {skills.map((skill) => (
+          <Chip
+            key={skill}
+            label={<Typography variant="body2">{skill}</Typography>}
+            variant="outlined"
+            color="default"
+          />
+        ))}
+      </Box>
+    </FeatureFlag>
   </Box>
 );
 

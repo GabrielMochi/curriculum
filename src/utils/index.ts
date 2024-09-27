@@ -2,3 +2,5 @@ export { sortAcademicEducationRecords } from "./functions/sortAcademicEducationR
 export { sortCertificationRecords } from "./functions/sortCertificationRecords.util";
 export { isLastItemInArray } from "./functions/isLastItemInArray.utils";
 export { Months } from "./constants/months.enum";
+export { isFeatureFlagEnable } from "./functions/isFeatureFlagEnabled.util";
+export * from "./elements";

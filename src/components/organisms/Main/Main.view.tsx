@@ -6,6 +6,7 @@ import Space from "../../atoms/Space";
 import JobDetails from "../../molecules/JobDetails";
 import Title from "../../atoms/Title";
 import MarkdownText from "../../atoms/MarkdownText";
+import { FeatureFlag } from "../../../utils";
 
 const MainView = ({ t, jobDetailsRecords }: MainControllerReturn): ReactElement => (
   <Box
@@ -16,21 +17,25 @@ const MainView = ({ t, jobDetailsRecords }: MainControllerReturn): ReactElement 
     px={globalCss.horizontalSpacing}
     py={globalCss.verticalSpacing}
   >
-    <Box>
-      <Title textTransform="uppercase">{t("about.title")}</Title>
-      <Space height={globalCss.defaultIntercalationSpacing} />
-      <MarkdownText textAlign="justify">{t("about.description")}</MarkdownText>
-    </Box>
-    <Space height={{ xs: "32px", md: "48px" }} />
-    <Box>
-      <Title textTransform="uppercase">{t("professionalHistory.title")}</Title>
-      <Space height={globalCss.defaultIntercalationSpacing} />
-      <Stack spacing={4}>
-        {jobDetailsRecords.map((jobDetails) => (
-          <JobDetails key={jobDetails.jobTitle.concat(jobDetails.company)} {...jobDetails} />
-        ))}
-      </Stack>
-    </Box>
+    <FeatureFlag featureFlagKey="showAbout">
+      <Box>
+        <Title textTransform="uppercase">{t("about.title")}</Title>
+        <Space height={globalCss.defaultIntercalationSpacing} />
+        <MarkdownText textAlign="justify">{t("about.description")}</MarkdownText>
+      </Box>
+      <Space height={{ xs: "32px", md: "48px" }} />
+    </FeatureFlag>
+    <FeatureFlag featureFlagKey="showProfessionalExperience">
+      <Box>
+        <Title textTransform="uppercase">{t("professionalHistory.title")}</Title>
+        <Space height={globalCss.defaultIntercalationSpacing} />
+        <Stack spacing={4}>
+          {jobDetailsRecords.map((jobDetails) => (
+            <JobDetails key={jobDetails.jobTitle.concat(jobDetails.company)} {...jobDetails} />
+          ))}
+        </Stack>
+      </Box>
+    </FeatureFlag>
   </Box>
 );
 
