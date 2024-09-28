@@ -6,4 +6,4 @@ export const FEATURE_FLAGS = {
   showAbout: true,
   showProfessionalExperience: true,
   showSkillsChips: false,
-} as const;
+} as const satisfies Record<string, boolean>;
