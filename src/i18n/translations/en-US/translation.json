@@ -91,7 +91,7 @@
       },
       "monis": {
         "company": "Monis",
-        "jobTitle": "Founding Software Engineer",
+        "jobTitle": "Founding Engineer",
         "location": {
           "city": "São Paulo",
           "state": "SP",
@@ -100,10 +100,10 @@
         "description": {
           "highlights": [
             "He contributed to the architecture of the server-side application using NestJS (Node.js) and Typescript. The application integrated with a PostgreSQL database through TypeORM and included Redis for queue orchestration. It also connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
-            "Played a key role in the development of the web platform using Next.js, which became the first platform for users to interact with the Monis system.",
-            "Helped design and build an intuitive admin portal, enabling employees to manage users more efficiently. This portal was developed using Flutter for the web, with the potential for future cross-platform development of the Monis app for iOS and Android.",
-            "He was involved in implementing the initial CI/CD processes and automated testing, contributing to the reliability and stability of Monis' applications.",
-            "Utilized Docker to create container structures for application deployment within a GCP-architected infrastructure. Initially, VM instances hosted the applications, but as the need for scalability grew, the team transitioned to Cloud Run for more flexible and scalable deployments."
+            "Played a key role in the development of the web platform using Next.js and Chakra UI, which became the first platform for users to interact with the Monis system.",
+            "Using Flutter for the web, he designed and built an intuitive admin portal, enabling employees to manage users more efficiently.",
+            "He implemented the initial CI/CD processes and automated testing, contributing to the reliability and stability of Monis' applications.",
+            "He created container structures, using Docker, for application deployment within a GCP-architected infrastructure."
           ]
         }
       },
@@ -117,11 +117,8 @@
         },
         "description": {
           "highlights": [
-            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services to handle message intent detection. These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows.",
-            "As part of a Scrum squad, he followed Scrum methodologies to support project success. The team used Jira to organize sprints and carry out essential ceremonies. In addition to creating new flows, he also assisted in identifying and resolving bugs reported by the QA team.",
-            "He contributed to the authoring and maintenance of project documentation, focusing on project READMEs and Swagger documentation for APIs. These resources were crucial for efficient project management and the seamless integration of various components.",
-            "He worked with the team to optimize Git Flow, collaborating on a branch partitioning strategy that improved development processes. This approach facilitated smoother rollouts when needed and contributed to a more efficient workflow.",
-            "He made minor improvements to deployment workflows, particularly focusing on the Bitbucket settings file for AWS deployments and the Dockerfile, helping to streamline and enhance the reliability of the deployment process."
+            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services to handle message intent detection.",
+            "These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows."
           ]
         }
       },
@@ -136,11 +133,9 @@
         "description": {
           "highlights": [
             "He created web portals using Vue.js/Nuxt and Node.js so that users could access artificial intelligence tools. These portals' records and data were stored in a MongoDB database, and the user sessions were kept in Redis.",
-            "Using Node.js, he designed and deployed chatbots that improved organizational communication. These chatbots were equipped with cognitive conversational capabilities, image recognition, and audio transcription features from IBM Watson Conversation and Microsoft Bot Framework.",
-            "Was responsible for maintenance, versioning (Git), and ensuring the functioning of these web portals hosted on IIS servers within virtual machines.",
+            "Using Node.js, he designed and deployed chatbots that improved organizational communication. These chatbots were equipped with cognitive conversational capabilities from IBM Watson Conversation and Microsoft Bot Framework.",
             "At clients' request, he automated several internal audit and financial services processes with Node.js. Most of these automations were integrated with Watson APIs (IBM Cloud) or Microsoft Azure artificial intelligence services.",
-            "Developed web scrapers using tools such as Selenium and Puppeteer to extract data from the web.",
-            "Contributed, with minor improvements, to artificial intelligence models using Python and R. These models were used by the clients in order to automate cognitive and repetitive tasks made by humans."
+            "Developed web scrapers using tools such as Selenium and Puppeteer to extract data from the web."
           ]
         }
       },
@@ -156,7 +151,7 @@
           "highlights": [
             "Developed a ChatBot for first-level support, which aimed to assist users with questions about the usability of an internal product provided by BRITech. Customers interacted with the bot through a web application developed in HTML, CSS, and JavaScript. The messaging service was developed in Node.js, which, through an API, integrated with IBM Watson's NLP services to obtain answers to users' questions.",
             "Taking advantage of the aforementioned bot's capacity, he developed a service in Node.js that integrated ZenDesk requests with the IBM Watson APIs. This way, users who opened tickets through ZenDesk would already receive a personalized and instantaneous response from the bot without the initial need for human activation.",
-            "Within a squad, he collaborated with small improvements and bug fixes in a frontend project that used the Aurelia framework and TypeScript."
+            "Within a squad, he collaborated with improvements and bug fixes in a frontend project that used the Aurelia framework and TypeScript."
           ]
         }
       }
