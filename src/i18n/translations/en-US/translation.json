@@ -64,7 +64,7 @@
   },
   "about": {
     "title": "about",
-    "description": "I'm a **Senior Software Engineer** and **Full Stack Engineer** with **over eight years of experience** building web applications, servers, APIs, and process automation.\n\nAs a developer, my central dilemma is developing code that is readable not only for the computer, but _especially for humans_. This implies a well-structured code that follows the principles of good practice and is easy to maintain.\n\nIn addition to the other skills listed in my profile, this is **my main stack**: Node.js, React, Next.js, NestJS, TypeScript, JavasScript, MongoDB, PostgreSQL, and Redis."
+    "description": "I'm a **Senior Software Engineer** and **Full Stack Engineer** with **over eight years of experience** building web applications, servers, APIs, and process automation.\n\nAs a developer, my central motto is developing code that is readable not only for the computer, but _especially for humans_. This implies a well-structured code that follows the principles of good practice and is easy to maintain.\n\nIn addition to the other skills listed in my profile, this is **my main stack**: Node.js, React, Next.js, NestJS, TypeScript, JavasScript, MongoDB, PostgreSQL, and Redis."
   },
   "professionalHistory": {
     "periodDateFormat": "MMM YYYY",
