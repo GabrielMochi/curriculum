@@ -2,7 +2,7 @@
   "intro": {
     "firstName": "Gabriel",
     "lastName": "Mochi",
-    "role": "Senior Full Stack Engineer"
+    "role": "Senior Full Stack Developer"
   },
   "contact": {
     "label": "Contact",
@@ -13,6 +13,9 @@
     "email": {
       "label": "E-mail",
       "value": "contact@gabrielmochi.dev"
+    },
+    "portfolio": {
+      "label": "Portfolio"
     }
   },
   "social": {
@@ -64,7 +67,7 @@
   },
   "about": {
     "title": "about",
-    "description": "I'm a **Senior Software Engineer** and **Full Stack Engineer** with **over eight years of experience** building web applications, servers, APIs, and process automation.\n\nAs a developer, my central motto is developing code that is readable not only for the computer, but _especially for humans_. This implies a well-structured code that follows the principles of good practice and is easy to maintain.\n\nIn addition to the other skills listed in my profile, this is **my main stack**: Node.js, React, Next.js, NestJS, TypeScript, JavasScript, MongoDB, PostgreSQL, and Redis."
+    "description": "I'm a **Senior Full Stack Developer** with strong software engineering expertise and **over eight years of experience** building scalable web applications, APIs, and process automation. I specialize in delivering clean, maintainable, and human-readable code that follows best practices and solid architectural principles.\n\n**My core tech stack includes:** Node.js, NestJS, TypeScript, JavaScript, Express, Redis (Backend); React, Next.js, HTML, CSS, TailwindCSS (Frontend); PostgreSQL, MongoDB (Databases); and Docker, GCP, CI/CD (DevOps/Other).\n\nI'm passionate about learning new technologies and methodologies, and I'm always looking for opportunities to grow and improve my skills. I'm a team player who enjoys collaborating with others to solve complex problems and deliver high-quality software solutions."
   },
   "professionalHistory": {
     "periodDateFormat": "MMM YYYY",
@@ -81,11 +84,11 @@
         },
         "description": {
           "highlights": [
-            "He Developed several improvements in projects focused on the legal and financial sectors by adding new features, fixing bugs, and resolving technical debt on both the frontend (React + TypeScript) and backend (Node.js).",
-            "Participated in the structuring and development of a new vault platform. The backend of this platform was built using NestJS + TypeScript, while the frontend was developed in React. Data was stored through MongoDB, and uploaded files were stored in AWS S3.",
-            "Collaborated with the backend integration and restructuring of the payment system through Stripe.",
-            "Enhanced and improved the coverage of E2E (Cypress), unit (Jest), and integration tests for each new or modified feature in the product.",
-            "Contributed to the OpenAPI (Swagger) documentation by adding more specifications as new APIs were added or modified."
+            "Developed multiple enhancements for projects in the legal and financial sectors by adding new features, resolving bugs, and addressing technical debt across the frontend (React + TypeScript) and backend (Node.js).",
+            "Played a key role in designing and developing a new vault platform, utilizing NestJS + TypeScript for the backend and React for the frontend, with data stored in MongoDB and files managed in AWS S3.",
+            "Worked closely with the team to integrate and restructure the payment system, enhancing Stripe payment processing functionality.",
+            "Improved test coverage by implementing and maintaining E2E (Cypress), unit (Jest), and integration tests for new and modified features, ensuring higher reliability and stability.",
+            "Contributed to enhancing OpenAPI (Swagger) documentation by adding and refining API specifications as new endpoints were introduced or modified."
           ]
         }
       },
@@ -99,11 +102,12 @@
         },
         "description": {
           "highlights": [
-            "He contributed to the architecture of the server-side application using NestJS (Node.js) and Typescript. The application integrated with a PostgreSQL database through TypeORM and included Redis for queue orchestration. It also connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
-            "Played a key role in the development of the web platform using Next.js and Chakra UI, which became the first platform for users to interact with the Monis system.",
-            "Using Flutter for the web, he designed and built an intuitive admin portal, enabling employees to manage users more efficiently.",
-            "He implemented the initial CI/CD processes and automated testing, contributing to the reliability and stability of Monis' applications.",
-            "He created container structures, using Docker, for application deployment within a GCP-architected infrastructure."
+            "Contributed to the architecture of the server-side application, utilizing NestJS (Node.js) and TypeScript. The application integrated seamlessly with a PostgreSQL database via TypeORM, employed Redis for queue orchestration, and connected to external APIs such as Auth0 for user session management, AWS SES, and Stripe for payment processing.",
+            "Played a pivotal role in developing the web platform using Next.js and Chakra UI, creating the first interface for users to engage with the Monis system.",
+            "Designed and developed an intuitive admin portal using Flutter for the web, empowering employees to manage users more efficiently.",
+            "Implemented the initial CI/CD processes and automated testing, significantly improving the reliability and stability of Monis' applications.",
+            "Built and optimized container structures with Docker for seamless application deployment within a GCP-based infrastructure.",
+            "Mentored and assisted with the onboarding of new team members, ensuring smooth integration into the development process and alignment with the company culture and best practices."
           ]
         }
       },
@@ -117,8 +121,8 @@
         },
         "description": {
           "highlights": [
-            "He contributed to the development of chatbot flows using Node.js and Typescript, ensuring precise responses aligned with user message intent. The application integrated external NLP services to handle message intent detection.",
-            "These interactions were primarily focused on WhatsApp's front-end, and he also helped facilitate HTTP calls to Google Maps APIs to provide location-based information in specific chatbot flows."
+            "Contributed to the development of chatbot flows using Node.js and TypeScript, ensuring accurate and contextually relevant responses based on user message intent. Integrated external NLP services for efficient intent detection.",
+            "Focused on enhancing WhatsApp-based interactions, and facilitated HTTP calls to Google Maps APIs, delivering location-based information within specific chatbot flows."
           ]
         }
       },
@@ -132,10 +136,10 @@
         },
         "description": {
           "highlights": [
-            "He created web portals using Vue.js/Nuxt and Node.js so that users could access artificial intelligence tools. These portals' records and data were stored in a MongoDB database, and the user sessions were kept in Redis.",
-            "Using Node.js, he designed and deployed chatbots that improved organizational communication. These chatbots were equipped with cognitive conversational capabilities from IBM Watson Conversation and Microsoft Bot Framework.",
-            "At clients' request, he automated several internal audit and financial services processes with Node.js. Most of these automations were integrated with Watson APIs (IBM Cloud) or Microsoft Azure artificial intelligence services.",
-            "Developed web scrapers using tools such as Selenium and Puppeteer to extract data from the web."
+            "Created web portals using Vue.js/Nuxt and Node.js, providing users access to artificial intelligence tools. Data and records were stored in a MongoDB database, with user sessions managed through Redis.",
+            "Designed and deployed chatbots with Node.js to enhance organizational communication, integrating cognitive conversational capabilities from IBM Watson Conversation and Microsoft Bot Framework.",
+            "Automated several internal audit and financial services processes with Node.js, integrating with Watson APIs (IBM Cloud) and Microsoft Azure AI services as per clients' requests.",
+            "Developed web scrapers using tools like Selenium and Puppeteer to extract data from websites."
           ]
         }
       },
@@ -149,9 +153,9 @@
         },
         "description": {
           "highlights": [
-            "Developed a ChatBot for first-level support, which aimed to assist users with questions about the usability of an internal product provided by BRITech. Customers interacted with the bot through a web application developed in HTML, CSS, and JavaScript. The messaging service was developed in Node.js, which, through an API, integrated with IBM Watson's NLP services to obtain answers to users' questions.",
-            "Taking advantage of the aforementioned bot's capacity, he developed a service in Node.js that integrated ZenDesk requests with the IBM Watson APIs. This way, users who opened tickets through ZenDesk would already receive a personalized and instantaneous response from the bot without the initial need for human activation.",
-            "Within a squad, he collaborated with improvements and bug fixes in a frontend project that used the Aurelia framework and TypeScript."
+            "Developed a ChatBot for first-level support, designed to assist users with questions about the usability of an internal product provided by BRITech. Users interacted with the bot through a web application built with HTML, CSS, and JavaScript. The messaging service was developed in Node.js, integrating with IBM Watson's NLP services via an API to provide answers to user inquiries.",
+            "Leveraged the bot's capabilities by creating a Node.js service that integrated ZenDesk requests with IBM Watson APIs, enabling users who opened tickets in ZenDesk to receive personalized, instant responses from the bot without requiring human intervention.",
+            "Collaborated within a squad to implement improvements and bug fixes for a frontend project built with the Aurelia framework and TypeScript."
           ]
         }
       }
