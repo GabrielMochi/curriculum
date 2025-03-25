@@ -7,7 +7,6 @@ import App from "./App";
 import theme from "./theme";
 
 // TODO: change favicon
-// TODO: change page title
 // TODO: prevent indexing engines: https://support.thinkific.com/hc/en-us/articles/360030362134-How-do-I-stop-Google-from-indexing-my-site-
 // TODO: add responsibility
 // TODO: add option to download as PDF
