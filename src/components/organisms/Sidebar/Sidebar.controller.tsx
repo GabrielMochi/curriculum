@@ -18,6 +18,10 @@ const useSidebarController = (): SidebarControllerReturn => {
       label: t("contact.email.label"),
       value: <Link href={`mailto:${t("contact.email.value")}`}>{t("contact.email.value")}</Link>,
     },
+    {
+      label: t("contact.portfolio.label"),
+      value: <Link href="https://cv.gabrielmochi.dev">https://cv.gabrielmochi.dev</Link>,
+    },
   ];
 
   const socialRecords: SidebarControllerReturn["socialRecords"] = [
@@ -83,7 +87,13 @@ const useSidebarController = (): SidebarControllerReturn => {
       },
     ]);
 
-  return { t, contactRecords, socialRecords, academicEducationRecords, certificationRecords };
+  return {
+    t,
+    contactRecords,
+    socialRecords,
+    academicEducationRecords,
+    certificationRecords,
+  };
 };
 
 export default useSidebarController;
