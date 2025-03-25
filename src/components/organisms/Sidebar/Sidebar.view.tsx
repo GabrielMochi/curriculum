@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 import type { SidebarControllerReturn } from "./Sidebar.interface";
 import globalCss from "../../../theme/globalCss";
 import SidebarSection from "../../molecules/SidebarSection";
@@ -23,31 +23,31 @@ const SidebarView = ({
     px={globalCss.horizontalSpacing}
     py={globalCss.verticalSpacing}
   >
-    <Grid
+    <Grid2
       container
       rowSpacing={globalCss.verticalSpacing}
       columnSpacing={globalCss.horizontalSpacing}
     >
       <FeatureFlag featureFlagKey="showContact">
-        <Grid item xs={12} sm={6} md={12}>
+        <Grid2 size={{ xs: 12, sm: 6, md: 12 }}>
           <SidebarSection title={t("contact.label")}>
             {contactRecords.map(({ label, value }) => (
               <Contact key={label} label={label} value={value} />
             ))}
           </SidebarSection>
-        </Grid>
+        </Grid2>
       </FeatureFlag>
       <FeatureFlag featureFlagKey="showSocial">
-        <Grid item xs={12} sm={6} md={12}>
+        <Grid2 size={{ xs: 12, sm: 6, md: 12 }}>
           <SidebarSection title={t("social.label")}>
             {socialRecords.map(({ label, url, logo }) => (
               <Social key={url} label={label} url={url} logo={logo} />
             ))}
           </SidebarSection>
-        </Grid>
+        </Grid2>
       </FeatureFlag>
       <FeatureFlag featureFlagKey="showAcademicEducation">
-        <Grid item xs={12} sm={6} md={12}>
+        <Grid2 size={{ xs: 12, sm: 6, md: 12 }}>
           <SidebarSection title={t("academicEducation.label")}>
             {academicEducationRecords.map(
               ({ courseTitle, institutionName, period, isIncomplete }) => (
@@ -61,10 +61,10 @@ const SidebarView = ({
               ),
             )}
           </SidebarSection>
-        </Grid>
+        </Grid2>
       </FeatureFlag>
       <FeatureFlag featureFlagKey="showCertifications">
-        <Grid item xs={12} sm={6} md={12}>
+        <Grid2 size={{ xs: 12, sm: 6, md: 12 }}>
           <SidebarSection title={t("certifications.label")}>
             {certificationRecords.map(({ certificationTitle, institutionName, year }) => (
               <Certification
@@ -75,9 +75,9 @@ const SidebarView = ({
               />
             ))}
           </SidebarSection>
-        </Grid>
+        </Grid2>
       </FeatureFlag>
-    </Grid>
+    </Grid2>
   </Box>
 );
 
